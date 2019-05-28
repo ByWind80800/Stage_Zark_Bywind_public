@@ -25,7 +25,7 @@ div a{
 .lien{
 	color: lightgreen;
 	border-top: 5px solid rgba(0.0,0.0,0.0,0.0);
-	border-bottom: 5px solid rgba(0.0,0.0,0.0,0.0);;
+	border-bottom: 5px solid rgba(0.0,0.0,0.0,0.0);
 	background-color: rgba(0.0,0.0,0.0,0.0);
 }
 .lien:hover{
@@ -35,6 +35,22 @@ div a{
 	background-color: darkgrey;
 	text-decoration: none;
 }
+
+.imglogo{
+	border-top: 5px solid rgba(0.0,0.0,0.0,0.0);
+	border-bottom: 5px solid rgba(0.0,0.0,0.0,0.0);
+	background-color: rgba(0.0,0.0,0.0,0.0);
+}
+
+.imglogo:hover{
+	color: green;
+	border-top: 5px solid green;
+	border-bottom: 5px solid green;
+	background-color: darkgrey;
+	text-decoration: none;
+}
+
+.
 .soustitre{
 	background-color:grey; 
 	text-align: center;
