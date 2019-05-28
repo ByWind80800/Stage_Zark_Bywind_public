@@ -23,15 +23,15 @@ div a{
 	padding: 20px 30px;
 }
 .lien{
-	color: lightgreen;
+	color: #3E215A;
 	border-top: 5px solid rgba(0.0,0.0,0.0,0.0);
 	border-bottom: 5px solid rgba(0.0,0.0,0.0,0.0);
 	background-color: rgba(0.0,0.0,0.0,0.0);
 }
 .lien:hover{
-	color: green;
-	border-top: 5px solid green;
-	border-bottom: 5px solid green;
+	color: #3E215A;
+	border-top: 5px solid #3E215A;
+	border-bottom: 5px solid #3E215A;
 	background-color: darkgrey;
 	text-decoration: none;
 }
@@ -43,9 +43,9 @@ div a{
 }
 
 .imglogo:hover{
-	color: green;
-	border-top: 5px solid green;
-	border-bottom: 5px solid green;
+	color: #3E215A;
+	border-top: 5px solid #3E215A;
+	border-bottom: 5px solid #3E215A;
 	background-color: darkgrey;
 	text-decoration: none;
 }
@@ -55,8 +55,8 @@ div a{
 	background-color:grey; 
 	text-align: center;
 	padding: 5px 5px;
-	border-top: 3px solid green;
-	border-bottom: 3px solid green;
+	border-top: 3px solid #3E215A;
+	border-bottom: 3px solid #3E215A;
 }
 .carrousel{
 	background-color: black;
@@ -65,8 +65,8 @@ div a{
 	margin-right: 50px;
 }
 footer{
-	border-top: 3px solid green;
-	border-bottom: 3px solid green;
+	border-top: 3px solid #3E215A;
+	border-bottom: 3px solid #3E215A;
 }
 .footer{
 	background-color: darkgrey;
