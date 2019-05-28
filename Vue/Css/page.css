@@ -20,13 +20,13 @@ div{
 div a{
 	display: inline-block;
 	text-decoration: none;
-	padding: 20px 30px;
 }
 .lien{
 	color: #3E215A;
 	border-top: 5px solid rgba(0.0,0.0,0.0,0.0);
 	border-bottom: 5px solid rgba(0.0,0.0,0.0,0.0);
 	background-color: rgba(0.0,0.0,0.0,0.0);
+	padding: 20px 30px;
 }
 .lien:hover{
 	color: #3E215A;
@@ -34,23 +34,8 @@ div a{
 	border-bottom: 5px solid #3E215A;
 	background-color: darkgrey;
 	text-decoration: none;
+	padding: 20px 30px;
 }
-
-.imglogo{
-	border-top: 5px solid rgba(0.0,0.0,0.0,0.0);
-	border-bottom: 5px solid rgba(0.0,0.0,0.0,0.0);
-	background-color: rgba(0.0,0.0,0.0,0.0);
-}
-
-.imglogo:hover{
-	color: #3E215A;
-	border-top: 5px solid #3E215A;
-	border-bottom: 5px solid #3E215A;
-	background-color: darkgrey;
-	text-decoration: none;
-}
-
-.
 .soustitre{
 	background-color:grey; 
 	text-align: center;
