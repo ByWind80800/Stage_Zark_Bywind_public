@@ -5,21 +5,26 @@ h1{
 	text-align: center;
 }
 
-}div li {
+div li {
 	list-style-type: none;
 	float: left;
+	background-color: #424558;
 }
 div ul{
 	margin:0px;
 	padding: 0px;
 	overflow: hidden;
 }
-div{
+.barrenav{
 	width: 100%;
+	background-color:#424558;
+	
 }
 div a{
 	display: inline-block;
 	text-decoration: none;
+	padding: 20px 30px;
+	color: #FFF;
 }
 .lien{
 	color: #3E215A;
@@ -35,6 +40,11 @@ div a{
 	background-color: darkgrey;
 	text-decoration: none;
 	padding: 20px 30px;
+}
+
+.logo{
+	margin-top: 7px;
+	margin-right: 7px;
 }
 .soustitre{
 	background-color:grey; 
