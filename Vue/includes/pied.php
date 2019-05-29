@@ -6,32 +6,32 @@
 			<div align="center">
 				<div class="row">
 					<div class="col-md-3">
-						<p>image tel</p>
+						<p><i class="fas fa-phone-square fa-5x"></i></p>
 						<p>Par téléphone</p>
-						<p>n° tél</p>
-						<p>Par Fax</p>
+						<p>04 71 03 83 55</p>
 					</div>
 					<div class="col-md-3">
-						<p>image Mail</p>
+						<p><i class="fas fa-envelope-square fa-5x"></i></p>
 						<p>Par mail</p>
-						<p><a href="">Formulaire de contact</a></p>
+						<p>mairiefreycenetlatour@orange.fr</p>
+						<p><a class="formulaireContact" href="">Formulaire de contact</a></p>
 					</div>
 					<div class="col-md-3">
-						<p>image horloge</p>
+						<p><i class="far fa-clock fa-5x"></i></p>
 						<p>Horaires d'ouverture</p>
-						<p><ul>
-							<li>Horaire 1</li>
-							<li>Horaire 2</li>
-						</ul>
+						<p>Le lundi de 10h00 à 12h00 et de 14h00 à 16h00 <br/>
+						Le jeudi de 10h00 à 12h00 et de 14h00 à 16h00</p>
 					</div>
 					<div class="col-md-3">
-						<p>image position</p>
+						<p><i class="fas fa-map-marker-alt fa-5x"></i></p>
 						<p>Se rendre en mairie</p>
-						<p><address>Adresse Mairie 43150 Freycenet-la-Tour</address></p>
+						<p><address>Le bourg 43150 Freycenet-la-Tour</address></p>
 					</div>
 				</div>
 			</div>
-			<font size="2" class="copyright">copyright</font>
+		</div>
+		<div class="copyright">
+			<i class="far fa-copyright"></i><font size="2"> copyright</font>
 		</div>
 	</footer>
 </html>

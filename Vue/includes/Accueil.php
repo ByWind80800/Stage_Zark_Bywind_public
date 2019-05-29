@@ -1,6 +1,12 @@
 <section>
 	<!-- Développement 1 -->
-		<div class="soustitre">
+	<h2 class="soustitre">Bienvenue sur le site de Freycenet la tour</h2>
+	
+
+
+
+
+		<!-- <div class="soustitre">
 			<h2>Présentation de la ville</h2>
 		</div>
 		<div class="carrousel">
@@ -13,5 +19,5 @@
 		<div class="soustitre">
 			<h2>Histoire de la ville</h2>
 		</div>
-		<p></p>
+		<p></p> -->
 </section>

@@ -1,3 +1,4 @@
+/*Style du Body et du titre*/
 body{
 	background-color: darkgrey;
 }
@@ -5,49 +6,193 @@ h1{
 	text-align: center;
 }
 
-div li {
+
+/*Style de la barre de navigation*/
+nav{
+	width: 100%;
+	background-color:#858585;
+	
+} 
+
+nav li {
 	list-style-type: none;
 	float: left;
-	background-color: #424558;
+	position: relative;
+
 }
-div ul{
+
+nav ul{
 	margin:0px;
 	padding: 0px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
-.barrenav{
-	width: 100%;
-	background-color:#424558;
-	
+
+nav ul::after{
+	content: "";
+	display: block;
+	clear: both;
 }
-div a{
+
+nav a{
 	display: inline-block;
 	text-decoration: none;
+}
+
+nav > ul > li > a{
 	padding: 20px 30px;
 	color: #FFF;
 }
-.lien{
-	color: #3E215A;
-	border-top: 5px solid rgba(0.0,0.0,0.0,0.0);
-	border-bottom: 5px solid rgba(0.0,0.0,0.0,0.0);
-	background-color: rgba(0.0,0.0,0.0,0.0);
-	padding: 20px 30px;
-}
-.lien:hover{
-	color: #3E215A;
-	border-top: 5px solid #3E215A;
-	border-bottom: 5px solid #3E215A;
-	background-color: darkgrey;
-	text-decoration: none;
-	padding: 20px 30px;
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
 }
 
+nav ul li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+.submenu{
+	display: none;
+}
+
+.submenu li{
+	border-bottom : 1px solid #CCC;
+}
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: red;
+	width: 270px;
+}
+ .submenu li:hover a{
+ 	color: #EEE;
+ 	font-weight: bold;
+ }
+.menu-accueil .submenu{
+	background-color: #858585;
+}
+.menu-actualite .submenu{
+	background-color: #858585;
+}
+.menu-commune .submenu{
+	background-color: #858585;
+}
+.menu-services .submenu{
+	background-color: #858585;
+}
+.menu-association .submenu{
+	background-color: #858585;
+}
+.menu-decouverte .submenu{
+	background-color: #858585;
+}
+
+.menu-accueil .submenu li:hover{
+	background-color:#3E215A; 
+}
+.menu-actualite .submenu li:hover{
+	background-color:#3E215A; 
+}
+.menu-commune .submenu li:hover{
+	background-color:#3E215A; 
+}
+.menu-services .submenu li:hover{
+	background-color:#3E215A; 
+}
+.menu-association .submenu li:hover{
+	background-color:#3E215A; 
+}
+.menu-decouverte .submenu li:hover{
+	background-color:#3E215A; 
+}
+
+
+.menu-accueil{
+	border-top: 5px;
+ 	background-color: #858585;
+ 	color: #3E215A;
+}
+.menu-actualite{
+ 	border-top: 5px;
+ 	background-color: #858585;
+ 	color: #3E215A;
+ 	padding: 20px 30px;
+ }
+
+  .menu-commune{
+ 	border-top: 5px;
+ 	background-color: #858585;
+ 	color: #3E215A;
+ 	padding: 20px 30px;
+ }
+
+  .menu-services{
+ 	border-top: 5px;
+ 	background-color: #858585;
+ 	color: #3E215A;
+ 	padding: 20px 30px;
+ }
+
+  .menu-association{
+ 	border-top: 5px;
+ 	background-color: #858585;
+ 	color: #3E215A;
+ 	padding: 20px 30px;
+ }
+  .menu-decouverte{
+ 	border-top: 5px;
+ 	background-color: #858585;
+ 	color: #3E215A;
+ 	padding: 20px 30px;
+ }
+
+.menu-accueil:hover{
+	border-top: 5px solid #3E215A;
+ 	background-color: darkgrey;
+}
+ .menu-actualite:hover{
+ 	border-top: 5px solid #3E215A;
+ 	background-color: darkgrey;
+ 	padding: 20px 30px;
+ }
+
+  .menu-commune:hover{
+ 	border-top: 5px solid #3E215A;
+ 	background-color: darkgrey;
+ 	padding: 20px 30px;
+ }
+
+  .menu-services:hover{
+ 	border-top: 5px solid #3E215A;
+ 	background-color: darkgrey;
+ 	padding: 20px 30px;
+ }
+
+  .menu-association:hover{
+ 	border-top: 5px solid #3E215A;
+ 	background-color: darkgrey;
+ 	padding: 20px 30px;
+ }
+  .menu-decouverte:hover{
+ 	border-top: 5px solid #3E215A;
+ 	background-color: darkgrey;
+ 	padding: 20px 30px;
+ }
 .logo{
 	margin-top: 7px;
 	margin-right: 7px;
 }
+
+
 .soustitre{
-	background-color:grey; 
+	background-color:white;
+	color: #3E215A; 
 	text-align: center;
 	padding: 5px 5px;
 	border-top: 3px solid #3E215A;
@@ -59,9 +204,23 @@ div a{
 	margin-top: 15px;
 	margin-right: 50px;
 }
+
+/*Style du pied de page*/
 footer{
 	border-top: 3px solid #3E215A;
 	border-bottom: 3px solid #3E215A;
 	background-color: #3E215A;
+	color: #A1A1A1;
 }
+.formulaireContact{
+	color: #A1A1A1;
+}
+.copyright{
+	background-color: black;
+	color: #A1A1A1;
+	width: 100%;
+	text-align: left;
+}
+
+
 

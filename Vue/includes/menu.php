@@ -1,57 +1,64 @@
 <section>
 	<!-- Barre de navigation -->
-		<div>
-			<ul class="barrenav">
-		      	<li><a class="lien" href="index.php?page=Controler&param=Accueil">Accueil</a></li>
+	<nav class="barrenav">
+		<ul>
+			<li class="menu-accueil">
+				<a href="index.php?page=Controler&param=Accueil">Accueil</a>
+			</li>
 
-				<li class="nav-item dropdown">
-				   	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Actualités</a>
-				    <div class="dropdown-menu">
-				    	<a class="dropdown-item" href="#">Nouvelles</a>
-				    	<a class="dropdown-item" href="#">Agenda</a>
-				    	<a class="dropdown-item" href="#">Rétrophotos</a>
-				    </div>
+			<li class="menu-actualite">Actualité
+				<ul class="submenu">
+					<li><a href="">Nouvelles</a></li>
+					<li><a href="">Agenda</a></li>
+					<li><a href="">Rétrophotos</a></li>
+				</ul>
+			</li>
+		
+
+			<li class="menu-commune">Commune
+					<ul class="submenu">
+						<li><a href="">Mairie</a></li>
+						<li><a href="">Conseil Municipal</a></li>
+						<li><a href="">Equipement municipaux</a></li>
+						<li><a href="">Travaux</a></li>
+					</ul>
 				</li>
 
-				<li class="nav-item dropdown">
-				   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Commune</a>
-				   <div class="dropdown-menu">
-				    	<a class="dropdown-item" href="#">Mairie</a>
-				    	<a class="dropdown-item" href="#">Conseil Municipal</a>
-				    	<a class="dropdown-item" href="#">Équipement Municipaux</a>
-				    </div>
+
+			<li class="menu-services">Services
+					<ul class="submenu">
+						<li><a href="">Espaces numérique</a></li>
+						<li><a href="">Ramassage des ordures ménagères</a></li>
+						<li><a href="">Eau potable</a></li>
+						<li><a href="">Salle communale</a></li>
+						<li><a href="">Entreprises et société</a></li>
+					</ul>
 				</li>
 
-				<li class="nav-item dropdown">
-				   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-				   <div class="dropdown-menu">
-				    	<a class="dropdown-item" href="#">Espace Numérique</a>
-				    	<a class="dropdown-item" href="#">Ramassage des Ordures Ménagères</a>
-				    	<a class="dropdown-item" href="#">Eau Potable</a>
-				    	<a class="dropdown-item" href="#">Salle Communale</a>
-				    	<a class="dropdown-item" href="#">Entreprises et Sociétés</a>
-				    </div>
+
+			<li class="menu-association">Association
+					<ul class="submenu">
+						<li><a href="">Comité des fêtes</a></li>
+						<li><a href="">association de la chasse</a></li>
+						<li><a href="">association de la pétanque</a></li>
+					</ul>
 				</li>
 
-				<li class="nav-item dropdown">
-				   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Association</a>
-				   <div class="dropdown-menu">
-				    	<a class="dropdown-item" href="#">Comité des Fêtes</a>
-				    	<a class="dropdown-item" href="#">Association de la Chasse</a>
-				    	<a class="dropdown-item" href="#">Association de la Pétanque de la Tour</a>
-				    </div>
-				</li>
+			<li class="menu-decouverte">Decouverte
+				<ul class="submenu">
+					<li><a href="">Histoire</a></li>
+					<li><a href="">Patrimoine</a></li>
+					<li><a href="">Parcours de Freycene</a></li>
+				</ul>
+			</li>
 
-				<li class="nav-item dropdown">
-				   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Découverte</a>
-				   <div class="dropdown-menu">
-				    	<a class="dropdown-item" href="#">Histoire</a>
-				    	<a class="dropdown-item" href="#">Patrimoine</a>
-				    	<a class="dropdown-item" href="#">Parcours de Freycenet</a>
-				    </div>
-				</li>
+			<img src="Vue/img/logo.png" align="right" class="logo">
+		</ul>
+			
 
-				<img src="Vue/img/logo.png" align="right" class="logo">
+
+
+				
 		    </ul>
 		    <br/>
 		</div>
