@@ -8,47 +8,47 @@
 
 			<li class="menu-actualite">Actualité
 				<ul class="submenu">
-					<li><a href="">Nouvelles</a></li>
-					<li><a href="">Agenda</a></li>
-					<li><a href="">Rétrophotos</a></li>
+					<li><a href="index.php?page=Controler&param=nouvelles">Nouvelles</a></li>
+					<li><a href="index.php?page=Controler&param=agenda">Agenda</a></li>
+					<li><a href="index.php?page=Controler&param=retrophotos">Rétrophotos</a></li>
 				</ul>
 			</li>
 		
 
 			<li class="menu-commune">Commune
 					<ul class="submenu">
-						<li><a href="">Mairie</a></li>
-						<li><a href="">Conseil Municipal</a></li>
-						<li><a href="">Equipement municipaux</a></li>
-						<li><a href="">Travaux</a></li>
+						<li><a href="index.php?page=Controler&param=Mairie">Mairie</a></li>
+						<li><a href="index.php?page=Controler&param=ConseilMunicipal">Conseil Municipal</a></li>
+						<li><a href="index.php?page=Controler&param=equipementMunicipaux">Equipement municipaux</a></li>
+						<li><a href="index.php?page=Controler&param=travaux">Travaux</a></li>
 					</ul>
 				</li>
 
 
 			<li class="menu-services">Services
 					<ul class="submenu">
-						<li><a href="">Espaces numérique</a></li>
-						<li><a href="">Ramassage des ordures ménagères</a></li>
-						<li><a href="">Eau potable</a></li>
-						<li><a href="">Salle communale</a></li>
-						<li><a href="">Entreprises et société</a></li>
+						<li><a href="index.php?page=Controler&param=EspaceNum">Espaces numérique</a></li>
+						<li><a href="index.php?page=Controler&param=RamassOm">Ramassage des ordures ménagères</a></li>
+						<li><a href="index.php?page=Controler&param=Eau">Eau potable</a></li>
+						<li><a href="index.php?page=Controler&param=SalleCommunale">Salle communale</a></li>
+						<li><a href="index.php?page=Controler&param=Societe">Entreprises et société</a></li>
 					</ul>
 				</li>
 
 
 			<li class="menu-association">Association
 					<ul class="submenu">
-						<li><a href="">Comité des fêtes</a></li>
-						<li><a href="">association de la chasse</a></li>
-						<li><a href="">association de la pétanque</a></li>
+						<li><a href="index.php?page=Controler&param=comiteFete">Comité des fêtes</a></li>
+						<li><a href="index.php?page=Controler&param=Chasse">association de la chasse</a></li>
+						<li><a href="index.php?page=Controler&param=Petanque">association de la pétanque</a></li>
 					</ul>
 				</li>
 
 			<li class="menu-decouverte">Decouverte
 				<ul class="submenu">
-					<li><a href="">Histoire</a></li>
-					<li><a href="">Patrimoine</a></li>
-					<li><a href="">Parcours de Freycene</a></li>
+					<li><a href="index.php?page=Controler&param=histoire">Histoire</a></li>
+					<li><a href="index.php?page=Controler&param=patrimoine">Patrimoine</a></li>
+					<li><a href="index.php?page=Controler&param=Parcours">Parcours de Freycene</a></li>
 				</ul>
 			</li>
 
