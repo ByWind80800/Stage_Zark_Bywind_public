@@ -229,7 +229,9 @@ nav ul li:hover a{
 /*FIN MENU*/
 
 /*Style tableau*/
-
+table th{
+	text-align: center;
+}
 
 
 
