@@ -21,8 +21,13 @@ if(isset($_REQUEST['param']))
 			include(dirname(__FILE__).'/../Vue/includes/connexion.php');
 		}
 
+		case 'nouvelles':
+		{
+			include(dirname(__FILE__).'/../Vue/includes/Actualités/nouvelles.php');
+		}
+
 		default :
-			include(dirname(__FILE__) . '/../Vue/includes/connexion.php');
+			include(dirname(__FILE__) . '/../Vue/includes/Accueil.php');
 			break;
 
 	}
