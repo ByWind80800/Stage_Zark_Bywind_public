@@ -9,7 +9,7 @@
 	}
 	else
 	{
-		include(dirname(__FILE__) . '/Vue/includes/connexion.php');
+		include(dirname(__FILE__) . '/Vue/includes/Accueil.php');
 	}
 	include 'Vue/includes/pied.php';
 ?>
