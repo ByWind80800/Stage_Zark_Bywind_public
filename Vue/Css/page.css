@@ -176,33 +176,39 @@ nav ul li:hover a{
 .menu-accueil:hover{
 	border-top: 5px solid #3E215A;
  	background-color: darkgrey;
+ 	height: 72px;
 }
 .menu-actualite:hover{
  	border-top: 5px solid #3E215A;
  	background-color: darkgrey;
  	padding: 20px 30px;
+ 	height: 72px;
  }
 
 .menu-commune:hover{
  	border-top: 5px solid #3E215A;
  	background-color: darkgrey;
  	padding: 20px 30px;
+ 	height: 72px;
  }
 
 .menu-services:hover{
  	border-top: 5px solid #3E215A;
  	background-color: darkgrey;
  	padding: 20px 30px;
+ 	height: 72px;
  }
 .menu-association:hover{
  	border-top: 5px solid #3E215A;
  	background-color: darkgrey;
  	padding: 20px 30px;
+ 	height: 72px;
  }
  .menu-decouverte:hover{
  	border-top: 5px solid #3E215A;
  	background-color: darkgrey;
  	padding: 20px 30px;
+ 	height: 72px;
  }
 .connexion:hover{
 	border-top: 5px solid #3E215A;
@@ -210,6 +216,7 @@ nav ul li:hover a{
  	padding: 20px 30px;
  	text-decoration: none;
  	color: #3E215A;
+ 	height: 72px;
 }
 .logo{
 	margin-top: 7px;
@@ -255,7 +262,7 @@ footer{
 	background-color: #3E215A;
 	color: #A1A1A1;
 }
-.formulaireContact{
+.formulaire{
 	color: #A1A1A1;
 }
 .copyright{

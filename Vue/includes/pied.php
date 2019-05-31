@@ -13,8 +13,8 @@
 					<div class="col-md-3">
 						<p><i class="fas fa-envelope-square fa-5x"></i></p>
 						<p>Par mail</p>
-						<p>mairiefreycenetlatour@orange.fr</p>
-						<p><a class="formulaireContact" href="">Formulaire de contact</a></p>
+						<p><a class="formulaire" href="mailto:contact@moto.com">mairiefreycenetlatour@orange.fr</a></p>
+						<p><a class="formulaire" href="">Formulaire de contact</a></p>
 					</div>
 					<div class="col-md-3">
 						<p><i class="far fa-clock fa-5x"></i></p>
