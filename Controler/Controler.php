@@ -28,13 +28,13 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
-		case 'nouvelles':
+		case 'agenda':
 		{
 			include(dirname(__FILE__).'/../Vue/includes/Actualités/agenda.php');
 			break;
 		}
 
-		case 'nouvelles':
+		case 'retrophotos':
 		{
 			include(dirname(__FILE__).'/../Vue/includes/Actualités/retrophotos.php');
 			break;
@@ -49,6 +49,12 @@ if(isset($_REQUEST['param']))
 		case 'ConseilMunicipal':
 		{
 			include(dirname(__FILE__).'/../Vue/includes/Commune/ConseilMunicipal.php');
+			break;
+		}
+
+		case 'equipementMunicipaux':
+		{
+			include(dirname(__FILE__).'/../Vue/includes/Commune/equipementMunicipaux.php');
 			break;
 		}
 
