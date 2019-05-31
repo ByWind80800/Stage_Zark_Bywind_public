@@ -56,7 +56,7 @@ nav li:hover .submenu{
 nav ul li:hover a{
 	padding: 15px 30px 20px 30px;
 }
-
+/*Style des liste déroulante*/
 .submenu{
 	display: none;
 }
@@ -75,6 +75,8 @@ nav ul li:hover a{
  	color: #EEE;
  	font-weight: bold;
  }
+
+/*Style des classe menu*/
 .menu-accueil a{
 	color: #3E215A;
 	text-decoration: none;
@@ -105,6 +107,7 @@ nav ul li:hover a{
 	background-color: #858585;
 }
 
+/*Style des li dans les liste déroulante*/
 .menu-accueil .submenu li:hover{
 	background-color:#3E215A; 
 }
@@ -173,6 +176,8 @@ nav ul li:hover a{
  	padding: 20px 30px
  }
 
+
+/*style des cases lors du passage de la souris*/
 .menu-accueil:hover{
 	border-top: 5px solid #3E215A;
  	background-color: darkgrey;
@@ -188,7 +193,6 @@ nav ul li:hover a{
  	background-color: darkgrey;
  	padding: 20px 30px;
  }
-
 .menu-services:hover{
  	border-top: 5px solid #3E215A;
  	background-color: darkgrey;
@@ -215,6 +219,7 @@ nav ul li:hover a{
 	margin-top: 7px;
 	margin-right: 7px;
 }
+/*FIN MENU*/
 
 
 
