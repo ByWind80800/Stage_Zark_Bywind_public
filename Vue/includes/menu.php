@@ -1,6 +1,6 @@
 <section>
 	<!-- Barre de navigation -->
-	<nav class="barrenav">
+	<nav>
 		<ul>
 			<li class="menu-accueil">
 				<a href="index.php?page=Controler&param=Accueil">Accueil</a>
@@ -51,15 +51,11 @@
 					<li><a href="index.php?page=Controler&param=Parcours">Parcours de Freycene</a></li>
 				</ul>
 			</li>
-
-			<img src="Vue/img/logo.png" align="right" class="logo">
+			<li>
+				<a class="connexion" href="index.php?page=Controler&param=Connexion">Connexion</a>
+			</li>
+			<img src="Vue/img/logo.png" align="right" class="logo">					
 		</ul>
-			
-
-
-
-				
-		    </ul>
-		    <br/>
-		</div>
+	</nav>
+<br/>
 </section>
