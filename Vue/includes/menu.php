@@ -48,11 +48,14 @@
 				<ul class="submenu">
 					<li><a href="index.php?page=Controler&param=histoire">Histoire</a></li>
 					<li><a href="index.php?page=Controler&param=patrimoine">Patrimoine</a></li>
-					<li><a href="index.php?page=Controler&param=Parcours">Parcours de Freycene</a></li>
+					<li><a href="index.php?page=Controler&param=Parcours">Parcours de Freycenet</a></li>
 				</ul>
 			</li>
 			<li>
 				<a class="connexion" href="index.php?page=Controler&param=Connexion">Connexion</a>
+			</li>
+			<li>
+				
 			</li>
 			<img src="Vue/img/logo.png" align="right" class="logo">					
 		</ul>
