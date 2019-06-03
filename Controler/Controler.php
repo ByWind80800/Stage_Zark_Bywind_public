@@ -24,6 +24,7 @@ if(isset($_REQUEST['param']))
 
 		case 'nouvelles':
 		{
+			$lesActus = $Pdo->getListActu();
 			include(dirname(__FILE__).'/../Vue/includes/Actualités/nouvelles.php');
 			break;
 		}
@@ -155,7 +156,7 @@ if(isset($_REQUEST['param']))
                         $_SESSION['mdp'] = $laLigne['mdp'];
                         $_SESSION['prenom'] = $laLigne['prenom'];
                         $_SESSION['droit'] = $laLigne['droit'];
-                        $_SESSION['idUser']= $laLigne['idUser'];
+                        $_SESSION['idUsers']= $laLigne['idUsers'];
                         ?>
                         <script >
                             document.location.href="index.php?page=Controler&param=Message&var=connexionVrai";
@@ -180,6 +181,24 @@ if(isset($_REQUEST['param']))
                     <?php
                 }
                 ?>
+                <?php
+                break;
+            }
+
+             case 'se-deconnecter' :
+            {
+                //////////////////////////////////////// detruit les variable session chargé dans valid Connexion
+                unset($_SESSION['nom']);
+                unset($_SESSION['prenom']);
+                unset($_SESSION['login']);
+                unset($_SESSION['mdp']);
+                unset($_SESSION['idUsers']);
+                unset($_SESSION['droit']);
+                session_destroy();
+                ?>
+                <script >
+                    document.location.href="index.php?page=Controler&param=Connexion";
+                </script>
                 <?php
                 break;
             }

@@ -18,21 +18,6 @@ if(isset($_REQUEST['var'])) {
                 break;
             }
 
-        case 'inscriptionVrai':
-            {
-                ?>
-                    <div class="card">
-                        <div class="card-body bg-success">
-                            <?php echo '<h1 class="card-text"> <b class="font2">Inscription réussie ! Connecte toi.</b></h1>';
-                            echo '<p class="font3">(Retour automatique à Connexion)</p>' ?>
-                        </div>
-                        <script>
-                            setTimeout("location.href = 'index.php?page=Controler&param=Connexion';", 3000);
-                        </script>
-                    </div>
-                <?php
-                break;
-            }
         case 'connexionFaux':
             {
                 ?>

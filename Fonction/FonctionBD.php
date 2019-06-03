@@ -23,6 +23,7 @@
 			Pdofreycenet::$monPdo = null;
 		}
 
+		//**************Fonction Get*************//
 		public static function getPdofreycenet()
 		{
 			if(Pdofreycenet::$monPdofreycenet==null)
@@ -32,13 +33,27 @@
 			return Pdofreycenet::$monPdofreycenet;  
 		}
 
-		//**************Fonction Get*************//
+		public function getListActu()
+		{
+			$req = "SELECT TITREACTU, TEXTEACTU, DATEACTU
+					FROM ACTUALITE
+					ORDER BY DESC";
+			echo $req;
+			$res = Pdofreycenet::$monPdo->query($req);
+			$lesActus = $res->fetchAll();
+			for ($i=0; $i<$nbLignes; $i++)
+			{
+				$date = $lesLignes[$i]['dateActu'];
+				$lesLignes[$i]['dateActu'] = dateAnglaisVersFrancais($date);
+			}
+			return $lesActus;
+		}
 
 		//*************Fonction de connexion*******//
 		public function connexion($login,$mdp)
     {
         $req = "SELECT * FROM users WHERE login='$login' AND mdp='$mdp'";
-        //echo $req;
+        echo $req;
         $var =Pdofreycenet::$monPdo->query($req);
         // recupére la ligne corepondant au paramétré rentrés
         $laLigne = $var->fetch();

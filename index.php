@@ -1,4 +1,6 @@
 <?php
+	session_start();
+	include 'Modele/connexion_bd.php';
 	include 'Vue/includes/header.php';
 	include 'Vue/includes/menu.php';
 

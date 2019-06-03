@@ -44,18 +44,26 @@
 					</ul>
 				</li>
 
-			<li class="menu-decouverte">Decouverte
+			<li class="menu-decouverte">Découverte
 				<ul class="submenu">
 					<li><a href="index.php?page=Controler&param=histoire">Histoire</a></li>
 					<li><a href="index.php?page=Controler&param=patrimoine">Patrimoine</a></li>
 					<li><a href="index.php?page=Controler&param=Parcours">Parcours de Freycenet</a></li>
 				</ul>
 			</li>
-			<li>
-				<a class="connexion" href="index.php?page=Controler&param=Connexion">Connexion</a>
-			</li>
-			<li>
-				
+			<li class="menu-connexion">
+				<?php
+            if(isset($_SESSION['droit']))
+            {
+                ?><a href="index.php?page=Controler&param=se-deconnecter">Déconnexion</a> <?php
+            }
+			else
+			{
+				?>
+				<a href="index.php?page=Controler&param=Connexion">Connexion</a>
+				<?php
+			}
+			?>
 			</li>
 			<img src="Vue/img/logo.png" align="right" class="logo">					
 		</ul>
