@@ -132,31 +132,31 @@ if(isset($_REQUEST['param']))
 		}
 
 		case 'Message':
-			include(dirname(__FILE__).'/../controler/Message.php');
+		{
+			include(dirname(__FILE__).'/../controler/message.php');
 			break;
+		}
 
-
-		
-
-		//Action connexion déconnexion//
-		case 'ValiderConnexion' :
+		case 'ValidConnexion' :
             {
-                //on vérifie tout d'abord si les champs sont bien remplis
-                if(!empty($_REQUEST['login'])&&!empty($_REQUEST['mdp']))
+                //Vérification si le champs sont bien remplis
+                if(!empty($_REQUEST['log'])&& !empty($_REQUEST['mot']))
                 {
-                    $login = htmlspecialchars($_REQUEST['login']);
-                    $mdp = sha1($_REQUEST['mdp']);
-                    /*encrypt le mot de passe à comparé*/
-                    $laLigne=$Pdo->connexion(Conversion($login),Conversion($mdp));
-                    //on vérifie ensuite si un compte est bien retourné de la bdd (si $laLigne == 0 c'est qu'aucun compte Membre n'est retourné et qu'il y a forcément une erreur dans les logs)
+                    //$login = htmlspecialchars($_REQUEST['login']);
+                    /*Crypte le mot de passe saisi*/
+                    //$mdp = sha1($_REQUEST['mdp']);
+                    /*Compare le mot de passe*/
+                    $laLigne=$Pdo->Connexion($log, $mot);
+                    /*Vérification si un compte est bien retourné de la bdd*/
+                    /*si $laLigne == 0 c'est qu'aucun compte Membre n'est retourné*/
                     if($laLigne != 0) {
-                        ///////// création des variales de session contenant les informations de l'utilisateur
-                        $_SESSION['nom'] = $laLigne['nom'];
-                        $_SESSION['login'] = $laLigne['login'];
-                        $_SESSION['mdp'] = $laLigne['mdp'];
-                        $_SESSION['prenom'] = $laLigne['prenom'];
-                        $_SESSION['droit'] = $laLigne['droit'];
-                        $_SESSION['idUsers']= $laLigne['idUsers'];
+                        /*Création des variables de session contenant les informations de l'utilisateur*/
+                        $_SESSION['nom'] = $laLigne['NOM'];
+                        $_SESSION['login'] = $laLigne['LOGIN'];
+                        $_SESSION['mdp'] = $laLigne['MDP'];
+                        $_SESSION['prenom'] = $laLigne['PRENOM'];
+                        $_SESSION['droit'] = $laLigne['DROIT'];
+                        $_SESSION['codeUser']= $laLigne['IDUSERS'];
                         ?>
                         <script >
                             document.location.href="index.php?page=Controler&param=Message&var=connexionVrai";
@@ -167,32 +167,23 @@ if(isset($_REQUEST['param']))
                     {
                         ?>
                         <script >
-                            document.location.href="index.php?page=Controler&param=Message&var=connexionFaux";
+                            //document.location.href="index.php?page=Controler&param=Message&var=connexionFaux";
                         </script>
                         <?php
                     }
                 }
-                else
-                {
-                    ?>
-                    <script >
-                        document.location.href="index.php?page=Controler&param=Message&var=connexionFauxChamps";
-                    </script>
-                    <?php
-                }
-                ?>
-                <?php
                 break;
             }
 
-             case 'se-deconnecter' :
+            /*Action de Déconnexion*/
+        case 'Deconnexion' :
             {
-                //////////////////////////////////////// detruit les variable session chargé dans valid Connexion
+                /*Détruit les variables session chargées dans ValidConnexion*/
                 unset($_SESSION['nom']);
                 unset($_SESSION['prenom']);
                 unset($_SESSION['login']);
                 unset($_SESSION['mdp']);
-                unset($_SESSION['idUsers']);
+                unset($_SESSION['codeUser']);
                 unset($_SESSION['droit']);
                 session_destroy();
                 ?>
@@ -202,7 +193,6 @@ if(isset($_REQUEST['param']))
                 <?php
                 break;
             }
-
 
 		default :
 			include(dirname(__FILE__) . '/../Vue/includes/Accueil.php');

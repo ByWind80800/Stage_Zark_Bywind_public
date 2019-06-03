@@ -1,0 +1,55 @@
+
+		//Action connexion déconnexion//
+		// case 'ValiderConnexion' :
+  //           {
+  //               //on vérifie tout d'abord si les champs sont bien remplis
+  //               if(!empty($_POST['login'])&&!empty($_POST['mdp']))
+  //               {
+  //                   //$login = htmlspecialchars($_REQUEST['login']);
+  //                   //$mdp = sha1($_REQUEST['mdp']);
+  //                   /*encrypt le mot de passe à comparé*/
+  //                   $laLigne=$Pdo->connexion($login,$mdp);
+  //                   //on vérifie ensuite si un compte est bien retourné de la bdd (si $laLigne == 0 c'est qu'aucun compte Membre n'est retourné et qu'il y a forcément une erreur dans les logs)
+  //                   if($laLigne != 0) {
+  //                       ///////// création des variales de session contenant les informations de l'utilisateur
+  //                       $_SESSION['nom'] = $laLigne['NOM'];
+  //                       $_SESSION['login'] = $laLigne['LOGIN'];
+  //                       $_SESSION['mdp'] = $laLigne['MDP'];
+  //                       $_SESSION['prenom'] = $laLigne['PRENOM'];
+  //                       $_SESSION['droit'] = $laLigne['DROIT'];
+  //                       $_SESSION['idUsers']= $laLigne['IDUSERS'];
+  //                       ?>
+  //                      <!--  <script >
+  //                           //document.location.href="index.php?page=Controler&param=Message&var=connexionVrai";
+  //                       </script> -->
+  //                       <?php
+  //                   }
+  //                   else
+  //                   {
+  //                       ?>
+  //                       <!-- <script >
+  //                           //document.location.href="index.php?page=Controler&param=Message&var=connexionFaux";
+  //                       </script> -->
+  //                       <?php
+  //                   }
+  //               }
+  //               break;
+  //           }
+
+  //            case 'se-deconnecter' :
+  //           {
+  //               //////////////////////////////////////// detruit les variable session chargé dans valid Connexion
+  //               unset($_SESSION['NOM']);
+  //               unset($_SESSION['PRENOM']);
+  //               unset($_SESSION['LOGIN']);
+  //               unset($_SESSION['MDP']);
+  //               unset($_SESSION['IDUSERS']);
+  //               unset($_SESSION['DROIT']);
+  //               session_destroy();
+  //               ?>
+  //               <!-- <script >
+  //                   document.location.href="index.php?page=Controler&param=Connexion";
+  //               </script> -->
+  //               <?php
+  //               break;
+  //           }

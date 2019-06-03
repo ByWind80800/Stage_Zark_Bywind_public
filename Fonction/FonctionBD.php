@@ -50,15 +50,28 @@
 		}
 
 		//*************Fonction de connexion*******//
-		public function connexion($login,$mdp)
-    {
-        $req = "SELECT * FROM users WHERE login='$login' AND mdp='$mdp'";
-        echo $req;
-        $var =Pdofreycenet::$monPdo->query($req);
-        // recupére la ligne corepondant au paramétré rentrés
-        $laLigne = $var->fetch();
-        return $laLigne;
-    }
+		// public function connexion($login,$mdp)
+  //   {
+  //       $req = "SELECT * FROM users WHERE LOGIN='$login' AND MDP='$mdp'";
+  //       echo $req;
+  //       $var =Pdofreycenet::$monPdo->query($req);
+  //       // recupére la ligne corepondant au paramétré rentrés
+  //       $laLigne = $var->fetch();
+  //       return $laLigne;
+  //   }
+
+
+		//Code LAURA//
+		/*Fonction de Connexion*/	
+        public function Connexion($log,$motdepasse)
+        {
+            $req = "SELECT * FROM users WHERE LOGIN='$log' AND MDP='$motdepasse'";
+            echo $req;
+            $var = Pdofreycenet::$monPdo->query($req);
+            //Recupère la ligne correspondant aux paramètres rentrés
+            $laLigne = $var->fetch();
+            return $laLigne;
+        }
 		
 	}
 ?>

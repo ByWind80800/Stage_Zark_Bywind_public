@@ -55,7 +55,7 @@
 				<?php
             if(isset($_SESSION['droit']))
             {
-                ?><a href="index.php?page=Controler&param=se-deconnecter">Déconnexion</a> <?php
+                ?><a href="index.php?page=Controler&param=Deconnexion">Déconnexion</a> <?php
             }
 			else
 			{
