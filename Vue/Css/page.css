@@ -246,6 +246,10 @@ table th{
  	background-color: darkgrey;
 }*/
 
+.tableau{
+	margin-right: auto;
+	margin-left: auto;
+}
 
 .soustitre{
 	background-color:white;
