@@ -8,55 +8,43 @@
 				<table border="2">
 					<tr>
 						<th colspan="1">Jours</th>
-						<th colspan="3">Horaires</th>
+						<th colspan="2">Horaires</th>
 					</tr>
 					<tr>
 						<td><font face="papyrus"><b>Lundi</b></font></td>
-						<td><font face="papyrus"><b>10h-12h</b></font></td>
-						<td><font face="papyrus"><b></b></font></td>
-						<td><font face="papyrus"><b>14h-16h</b></font></td>	
+						<th><font face="papyrus">10h-12h</font></th>
+						<th><font face="papyrus">14h-16h</font></th>	
 					</tr>
 
 					<tr>
 						<td><font face="papyrus"><b>Mardi</b></font></td>
-						<td></td>
-						<td><font face="papyrus"><b>Fermé</b></font></td>
-						<td></td>
+						<th colspan="2"><font face="papyrus">Fermé</font></th>
 					</tr>
 
 					<tr>
 						<td><font face="papyrus"><b>Mercredi</b></font></td>
-						<td></td>
-						<td><font face="papyrus"><b>Fermé</b></font></td>
-						<td></td>
+						<th colspan="2"><font face="papyrus">Fermé</font></th>
 					</tr>
 
 					<tr>
 						<td><font face="papyrus"><b>Jeudi</b></font></td>
-						<td><font face="papyrus"><b>10h-12h</b></font></td>
-						<td><font face="papyrus"><b></b></font></td>
-						<td><font face="papyrus"><b>14h-16h</b></font></td>				
+						<th><font face="papyrus">10h-12h</font></th>
+						<th><font face="papyrus">14h-16h</font></th>				
 					</tr>
 
 					<tr>
 						<td><font face="papyrus"><b>Vendredi</b></font></td>
-						<td></td>
-						<td><font face="papyrus"><b>Fermé</b></font></td>
-						<td></td>
+						<th colspan="2"><font face="papyrus">Fermé</font></th>
 					</tr>
 
 					<tr>
 						<td><font face="papyrus"><b>Samedi</b></font></td>
-						<td></td>
-						<td><font face="papyrus"><b>Fermé</b></font></td>
-						<td></td>
+						<th colspan="2"><font face="papyrus">Fermé</font></th>
 					</tr>
 
 					<tr>
-						<td><font face="papyrus"><b>Dimanche</b></font></td>
-						<td></td>
-						<td><font face="papyrus"><b>Fermé</b></font></td>
-						<td></td>
+						<th><font face="papyrus">Dimanche</font></th>
+						<th colspan="2"><font face="papyrus">Fermé</font></th>
 					</tr>
 				</table>
 				<br />
