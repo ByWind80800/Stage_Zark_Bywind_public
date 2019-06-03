@@ -19,3 +19,20 @@
 		</div>
 	</div>
 </section>
+
+<?php
+foreach ( $lesLignesGalerie as $uneImage )
+{
+    ?>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Agrandissement"
+               data-image="Vue/img/Galerie/<?php echo $uneImage['nomMedia']?>?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+               data-target="#image-gallery">
+                <img class="img-thumbnail m-3 " style="height: 200px; width: 300px;"
+                     src="Vue/img/Galerie/<?php echo $uneImage['nomMedia']?>?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                     alt="Another alt text">
+            </a>
+        </div>
+    <?php
+}
+?>
