@@ -144,10 +144,10 @@ if(isset($_REQUEST['param']))
                 //on vérifie tout d'abord si les champs sont bien remplis
                 if(!empty($_REQUEST['login'])&&!empty($_REQUEST['mdp']))
                 {
-                    $login = htmlspecialchars($_REQUEST['login']);
-                    $mdp = sha1($_REQUEST['mdp']);
+                    //$login = htmlspecialchars($_REQUEST['login']);
+                    //$mdp = sha1($_REQUEST['mdp']);
                     /*encrypt le mot de passe à comparé*/
-                    $laLigne=$Pdo->connexion(Conversion($login),Conversion($mdp));
+                    $laLigne=$Pdo->connexion($login, $mdp);
                     //on vérifie ensuite si un compte est bien retourné de la bdd (si $laLigne == 0 c'est qu'aucun compte Membre n'est retourné et qu'il y a forcément une erreur dans les logs)
                     if($laLigne != 0) {
                         ///////// création des variales de session contenant les informations de l'utilisateur

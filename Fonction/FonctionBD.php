@@ -49,14 +49,14 @@
 			return $lesActus;
 		}
 
-		//*************Fonction de connexion*******//
+		// *************Fonction de connexion*******//
 		public function connexion($login,$mdp)
     {
-        $req = "SELECT * FROM users WHERE login='$login' AND mdp='$mdp'";
+        $req = "SELECT * FROM users WHERE LOGIN='$login' AND MDP='$mdp'";
         echo $req;
         $var =Pdofreycenet::$monPdo->query($req);
-        // recupére la ligne corepondant au paramétré rentrés
-        $laLigne = $var->fetch();
+        // recupére la ligne corepondant au paramétres rentrés
+        $laLigne = $var->fetchAll();
         return $laLigne;
     }
 		
