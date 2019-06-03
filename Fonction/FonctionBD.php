@@ -33,6 +33,17 @@
 		}
 
 		//**************Fonction Get*************//
+
+		//*************Fonction de connexion*******//
+		public function connexion($login,$mdp)
+    {
+        $req = "SELECT * FROM users WHERE login='$login' AND mdp='$mdp'";
+        //echo $req;
+        $var =Pdofreycenet::$monPdo->query($req);
+        // recupére la ligne corepondant au paramétré rentrés
+        $laLigne = $var->fetch();
+        return $laLigne;
+    }
 		
 	}
 ?>

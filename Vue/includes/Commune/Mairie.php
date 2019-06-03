@@ -2,7 +2,7 @@
 	<div align="center">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="">
+				<img src="Vue/img/photos_paysage/Mairie.jpg" width="77%" height="77%">
 			</div>
 			<div class="col-md-6">
 				<table border="2">
