@@ -149,6 +149,10 @@ if(isset($_REQUEST['param']))
                     $laLigne=$Pdo->Connexion($log, $mot);
                     /*Vérification si un compte est bien retourné de la bdd*/
                     /*si $laLigne == 0 c'est qu'aucun compte Membre n'est retourné*/
+                    //$mdp = sha1($_REQUEST['mdp']);
+                    /*encrypt le mot de passe à comparé*/
+                    $laLigne=$Pdo->connexion($login, $mdp);
+                    //on vérifie ensuite si un compte est bien retourné de la bdd (si $laLigne == 0 c'est qu'aucun compte Membre n'est retourné et qu'il y a forcément une erreur dans les logs)
                     if($laLigne != 0) {
                         /*Création des variables de session contenant les informations de l'utilisateur*/
                         $_SESSION['nom'] = $laLigne['NOM'];
@@ -167,7 +171,7 @@ if(isset($_REQUEST['param']))
                     {
                         ?>
                         <script >
-                            //document.location.href="index.php?page=Controler&param=Message&var=connexionFaux";
+                            document.location.href="index.php?page=Controler&param=Message&var=connexionFaux";
                         </script>
                         <?php
                     }
