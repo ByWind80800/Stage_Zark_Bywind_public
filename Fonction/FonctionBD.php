@@ -49,6 +49,15 @@
 			return $lesActus;
 		}
 
+		public function getListImage(){
+	        $req ="select * from  image ";
+	        echo $req;
+	        $var= Pdofreycenet::$monPdo->query($req);
+	        $lesLignes = $var->fetchAll();
+	        $nbLignes = count($lesLignes);
+	        return $lesLignes;
+	    }
+
 		//*************Fonction de connexion*******//
 		// public function connexion($login,$mdp)
   //   {

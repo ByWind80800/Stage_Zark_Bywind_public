@@ -3,18 +3,22 @@
 	<div class="container">
 		<div align="center">
 			<div class="row">
-				<div class="col-md-3">
-					<img src="Vue/img/photos_paysage/les_Barthes/f0277034.jpg" width="100%" height="100%">
-				</div>
-				<div class="col-md-3">
-					<img src="Vue/img/photos_paysage/les_Barthes/f0357034.jpg" width="100%" height="100%">
-				</div>
-				<div class="col-md-3">
-					<img src="Vue/img/photos_paysage/les_Barthes/f0372202.jpg" width="100%" height="100%">
-				</div>
-				<div class="col-md-3">
-					<img src="Vue/img/photos_paysage/les_Barthes/f0578154.jpg" width="100%" height="100%">
-				</div>
+				<?php
+				foreach ($lesLignesImage as $uneImage)
+				{
+				    ?>
+				        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Agrandissement"
+				               data-image="Vue/img/photos_paysage/les_Barthes/<?php echo $uneImage['CHEMINIMG']?>?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+				               data-target="#image-gallery">
+				                <img class="img-thumbnail m-3 " style="height: 200px; width: 300px;"
+				                     src="Vue/img/photos_paysage/les_Barthes/<?php echo $uneImage['CHEMINIMG']?>?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+				                     alt="Another alt text">
+				            </a>
+				        </div>
+				    <?php
+				}
+				?>
 			</div>
 		</div>
 	</div>
@@ -74,20 +78,3 @@
 		</div>
 	</div>
 </section>
-
-<?php
-foreach ( $lesLignesGalerie as $uneImage )
-{
-    ?>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Agrandissement"
-               data-image="Vue/img/Galerie/<?php echo $uneImage['nomMedia']?>?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-               data-target="#image-gallery">
-                <img class="img-thumbnail m-3 " style="height: 200px; width: 300px;"
-                     src="Vue/img/Galerie/<?php echo $uneImage['nomMedia']?>?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                     alt="Another alt text">
-            </a>
-        </div>
-    <?php
-}
-?>

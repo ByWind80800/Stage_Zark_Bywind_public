@@ -137,6 +137,13 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
+		case 'Image' : 
+		{
+            $lesLignesImage=$Pdo->getListImage();
+			include (dirname(__FILE__).'/../Vue/includes/Actualités/retrophotos.php');
+			break;
+		}
+
 		case 'ValidConnexion' :
             {
                 //Vérification si le champs sont bien remplis
