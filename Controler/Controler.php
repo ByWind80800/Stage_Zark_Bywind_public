@@ -139,13 +139,13 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
-
 		case 'Image' : 
 		{
             $lesLignesImage=$Pdo->getListImage();
 			include (dirname(__FILE__).'/../Vue/includes/Actualités/retrophotos.php');
 			break;
 		}
+
 
 		case 'ValidConnexion' :
             {
@@ -257,7 +257,6 @@ if(isset($_REQUEST['param']))
                 <?php
                 break;
             }
->>>>>>> 241cc7e43131093e8386295de4401f8e66387d1a
 
 		default :
 			include(dirname(__FILE__) . '/../Vue/includes/Accueil.php');
