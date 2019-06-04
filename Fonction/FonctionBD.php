@@ -37,41 +37,46 @@
 		{
 			$req = "SELECT TITREACTU, TEXTEACTU, DATEACTU
 					FROM ACTUALITE
-					ORDER BY DESC";
-			echo $req;
+					ORDER BY DATEACTU DESC";
+			// echo $req;
 			$res = Pdofreycenet::$monPdo->query($req);
 			$lesActus = $res->fetchAll();
-			for ($i=0; $i<$nbLignes; $i++)
-			{
-				$date = $lesLignes[$i]['dateActu'];
-				$lesLignes[$i]['dateActu'] = dateAnglaisVersFrancais($date);
-			}
+			$nbLignes = count($lesActus);
+			// for ($i=0; $i<$nbLignes; $i++)
+			// {
+			// 	$date = $lesLignes[$i]['dateActu'];
+			// 	$lesLignes[$i]['dateActu'] = dateAnglaisVersFrancais($date);
+			// }
 			return $lesActus;
 		}
 
+		public function getListUsers()
+		{
+	        $req ="select * from  users ";
+	        echo $req;
+	        $var= Pdofreycenet::$monPdo->query($req);
+	        $lesLignes = $var->fetchAll();
+	        $nbLignes = count($lesLignes);
+	        return $lesLignes;
+    	}
+
 		//*************Fonction de connexion*******//
-		// public function connexion($login,$mdp)
-  //   {
-  //       $req = "SELECT * FROM users WHERE LOGIN='$login' AND MDP='$mdp'";
-  //       echo $req;
-  //       $var =Pdofreycenet::$monPdo->query($req);
-  //       // recupére la ligne corepondant au paramétré rentrés
-  //       $laLigne = $var->fetch();
-  //       return $laLigne;
-  //   }
+			public function connexion($login,$mdp)
+	    {
+	        $req = "SELECT * FROM users WHERE LOGIN='$login' AND MDP='$mdp'";
+	        echo $req;
+	        $var =Pdofreycenet::$monPdo->query($req);
+	        // recupére la ligne corepondant au paramétres rentrés
+	        $laLigne = $var->fetch();
+	        return $laLigne;
+	    }
+	    public function Inscription($nom,$prenom,$login,$mdp)
+	    {
+	        $req = "Insert into users (idUser,nom, prenom, login, mdp,droit) VALUES(null,'$nom','$prenom','$login','$mdp',0/* par default le droit est défini à zero=utilisateur 1=admin*/)";
+	        //echo $req;
+	        Pdofreycenet::$monPdo->exec($req);
+	    }
 
-
-		//Code LAURA//
-		/*Fonction de Connexion*/	
-        public function Connexion($log,$motdepasse)
-        {
-            $req = "SELECT * FROM users WHERE LOGIN='$log' AND MDP='$motdepasse'";
-            echo $req;
-            $var = Pdofreycenet::$monPdo->query($req);
-            //Recupère la ligne correspondant aux paramètres rentrés
-            $laLigne = $var->fetch();
-            return $laLigne;
-        }
 		
 	}
 ?>

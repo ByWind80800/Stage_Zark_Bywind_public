@@ -74,7 +74,7 @@ function getMois($date){
  * @return soit 0 pour aucun passe trouvé 1 si trouvé
  */
 function ComparePasse($passeReq){
-    $Pdo = Pdosite_dj::getPdosite_dj();
+    $Pdo = Pdofreycenet::getPdofreycenet();
     $lesLignes=$Pdo->getListUsers();
     $bool=0;
     foreach ($lesLignes as $unUser) {
