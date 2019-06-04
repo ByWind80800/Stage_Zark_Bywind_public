@@ -54,7 +54,7 @@
 		public function getListImage()
 		{
 	        $req ="select * from  image ";
-	        echo $req;
+	        //echo $req;
 	        $var= Pdofreycenet::$monPdo->query($req);
 	        $lesLignes = $var->fetchAll();
 	        $nbLignes = count($lesLignes);

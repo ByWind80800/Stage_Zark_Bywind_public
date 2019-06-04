@@ -25,19 +25,20 @@ if(isset($_REQUEST['param']))
 		case 'nouvelles':
 		{
 			$lesActus = $Pdo->getListActu();
-			include(dirname(__FILE__).'/../Vue/includes/Actualités/nouvelles.php');
+			include(dirname(__FILE__).'/../Vue/includes/Actualites/nouvelles.php');
 			break;
 		}
 
 		case 'agenda':
 		{
-			include(dirname(__FILE__).'/../Vue/includes/Actualités/agenda.php');
+			include(dirname(__FILE__).'/../Vue/includes/Actualites/agenda.php');
 			break;
 		}
 
 		case 'retrophotos':
 		{
-			include(dirname(__FILE__).'/../Vue/includes/Actualités/retrophotos.php');
+			$lesLignesImage=$Pdo->getListImage();
+			include (dirname(__FILE__).'/../Vue/includes/Actualites/retrophotos.php');
 			break;
 		}
 
@@ -134,13 +135,6 @@ if(isset($_REQUEST['param']))
 		case 'Message':
 		{
 			include(dirname(__FILE__).'/../controler/message.php');
-			break;
-		}
-
-		case 'Image' : 
-		{
-            $lesLignesImage=$Pdo->getListImage();
-			include (dirname(__FILE__).'/../Vue/includes/Actualités/retrophotos.php');
 			break;
 		}
 
