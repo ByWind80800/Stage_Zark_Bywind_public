@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <section>
-	<div class="colorfont">
+	<div>
     <div class="container" style="padding: 10px;">
         <h2>Photos étang des Barthes</h2>
         <div class="row">
@@ -24,6 +24,8 @@
 			</div>
 		</div>
 	</div>
+
+
 	<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	    <div class="modal-dialog modal-lg">
 	        <div class="modal-content">
@@ -45,6 +47,8 @@
 	        </div>
 	    </div>
 	</div>
+
+
 	<div class="colorfont">
     <div class="container" style="padding: 10px;">
         <h2>Les sucs autour de Freycenet la Tour</h2>
@@ -68,6 +72,8 @@
 			</div>
 		</div>
 	</div>
+
+
 	<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	    <div class="modal-dialog modal-lg">
 	        <div class="modal-content">
@@ -89,6 +95,8 @@
 	        </div>
 	    </div>
 	</div>
+
+
 	<h2>Photos paysage Freycenet la Tour</h2>
 	<div class="container">
 		<div align="center">
@@ -108,6 +116,8 @@
 			</div>
 		</div>
 	</div>
+
+
 	<h2>L'Église de Freycenet la Tour</h2>
 	<div class="container">
 		<div align="center">

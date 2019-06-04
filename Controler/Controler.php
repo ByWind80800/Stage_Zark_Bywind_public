@@ -134,8 +134,7 @@ if(isset($_REQUEST['param']))
 
 		case 'Message':
 		{
-
-			include(dirname(__FILE__).'../controler/message.php');
+			include(dirname(__FILE__).'/message.php');
 			break;
 		}
 
