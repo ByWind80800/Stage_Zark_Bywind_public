@@ -64,62 +64,7 @@ if(isset($_REQUEST['var'])) {
         }
 
 //Code LAURA//
-         case 'connexionVrai':
-            {
-                ?>
-                    <div class="container">
-                            <?php echo '<div class="card bg-dark" style="margin:10px;">
-                                            <div class="card-body">
-                                                <h1 align="center"> <b>Bonjour ' . $_SESSION['prenom'] . ' ' . $_SESSION['nom'] . '</b></h1>
-                                            </div>
-                                        </div>';
-                            ?>
-                            <h3>Mes informations de Connexion :</h3>
-                            <table class="table table-hover">
-                                <tr><th>Droit</th>
-                                    <td>
-                                    <?php
-                                        if ($_SESSION['droit']==1) {
-                                            echo 'Administrateur';
-                                        } else {
-                                            echo 'Utilisateur';
-                                        }
-                                    ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Prénom</th>
-                                    <td><?php echo $_SESSION['prenom']?></td>
-                                </tr>
-                                <tr>
-                                    <th>Nom</th>
-                                    <td><?php echo $_SESSION['nom']?></td>
-                                </tr>
-                                <tr>
-                                    <th>Login</th>
-                                    <td><?php echo $_SESSION['login']?></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                <?php
-                break;
-            }
-
-            case 'connexionFaux':
-            {
-                ?>
-                    <div class="container"> 
-                        <h1><b>Erreur : Mot de passe ou login incorrect.</b></h1>
-                        <p>(Retour automatique à la page Connexion)</p>
-                    </div>
-                     <script>
-                        setTimeout("location.href = 'index.php?page=Controler&param=Connexion';", 3000);
-                    </script>
-                <?php
-                break;
-            }
-
+        //message par rapport a la connexion//
             case 'inscriptionVrai':
             {
                 ?>

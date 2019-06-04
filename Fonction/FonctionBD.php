@@ -71,34 +71,27 @@
 	        return $lesLignes;
 	    }
 
-		//*************Fonction de connexion*******//
-		// public function connexion($login,$mdp)
-  //   {
-  //       $req = "SELECT * FROM users WHERE LOGIN='$login' AND MDP='$mdp'";
-  //       echo $req;
-  //       $var =Pdofreycenet::$monPdo->query($req);
-  //       // recupére la ligne corepondant au paramétré rentrés
-  //       $laLigne = $var->fetch();
-  //       return $laLigne;
-  //   }
     	
 
 		//*************Fonction de connexion*******//
-			public function connexion($login,$mdp)
-	    {
-	        $req = "SELECT * FROM users WHERE LOGIN='$login' AND MDP='$mdp'";
-	        echo $req;
-	        $var =Pdofreycenet::$monPdo->query($req);
-	        // recupére la ligne corepondant au paramétres rentrés
-	        $laLigne = $var->fetch();
-	        return $laLigne;
-	    }
-	    public function Inscription($nom,$prenom,$login,$mdp)
-	    {
-	        $req = "Insert into users (idUser,nom, prenom, login, mdp,droit) VALUES(null,'$nom','$prenom','$login','$mdp',0/* par default le droit est défini à zero=utilisateur 1=admin*/)";
-	        //echo $req;
-	        Pdofreycenet::$monPdo->exec($req);
-	    }
+			// public function connexion($login,$mdp)
+	  //   {
+	  //       $req = "SELECT * FROM users WHERE LOGIN='$login' AND MDP='$mdp'";
+	  //       echo $req;
+	  //       $var =Pdofreycenet::$monPdo->query($req);
+	  //       // recupére la ligne corepondant au paramétres rentrés
+	  //       $laLigne = $var->fetch();
+	  //       return $laLigne;
+	  //   }
+
+
+	    /*************Fonction pour Inscription*************/
+	    // public function Inscription($nom,$prenom,$login,$mdp)
+	    // {
+	    //     $req = "INSERT into USERS (IDUSERS, NOM, PRENOM, LOGIN, MDP, DROIT) VALUES(null,'$nom','$prenom','$login','$mdp',0/* par default le droit est défini à zero=utilisateur 1=admin*/)";
+	    //     echo $req;
+	    //     Pdofreycenet::$monPdo->exec($req);
+	    // }
 
 		
 	}

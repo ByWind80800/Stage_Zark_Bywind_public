@@ -134,9 +134,18 @@ if(isset($_REQUEST['param']))
 
 		case 'Message':
 		{
-			include(dirname(__FILE__).'/../controler/message.php');
+
+			include(dirname(__FILE__).'../controler/message.php');
 			break;
 		}
+
+		case 'Image' : 
+		{
+            $lesLignesImage=$Pdo->getListImage();
+			include (dirname(__FILE__).'/../Vue/includes/Actualités/retrophotos.php');
+			break;
+		}
+
 
 		case 'ValidConnexion' :
             {

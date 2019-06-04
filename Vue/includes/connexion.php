@@ -47,7 +47,7 @@
                     <label for="exampleInputPassword1">Confirmer le mot de passe</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirmer le mot de passe" name="mdpConfirmation">
                 </div>
-                <button type="submit" class="btn btn-outline-secondary marginAuto w-100" value="connexion">S'inscrire</button>
+                <button type="submit" class="btn btn-outline-secondary marginAuto w-100" value="Inscription">S'inscrire</button>
             </form>
         </div>
     </div>
