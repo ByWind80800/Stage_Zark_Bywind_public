@@ -146,28 +146,22 @@ if(isset($_REQUEST['param']))
 
 		case 'ValidConnexion' :
             {
-                //Vérification si le champs sont bien remplis
-                if(!empty($_REQUEST['log'])&& !empty($_REQUEST['mot']))
+                //on vérifie tout d'abord si les champs sont bien remplis
+                if(!empty($_REQUEST['login'])&&!empty($_REQUEST['mdp']))
                 {
-                    //$login = htmlspecialchars($_REQUEST['login']);
-                    /*Crypte le mot de passe saisi*/
-                    //$mdp = sha1($_REQUEST['mdp']);
-                    /*Compare le mot de passe*/
-                    $laLigne=$Pdo->Connexion($log, $mot);
-                    /*Vérification si un compte est bien retourné de la bdd*/
-                    /*si $laLigne == 0 c'est qu'aucun compte Membre n'est retourné*/
-                    //$mdp = sha1($_REQUEST['mdp']);
+                    $login = htmlspecialchars($_REQUEST['login']);
+                    $mdp = sha1($_REQUEST['mdp']);
                     /*encrypt le mot de passe à comparé*/
-                    $laLigne=$Pdo->connexion($login, $mdp);
+                    $laLigne=$Pdo->connexion(Conversion($login),Conversion($mdp));
                     //on vérifie ensuite si un compte est bien retourné de la bdd (si $laLigne == 0 c'est qu'aucun compte Membre n'est retourné et qu'il y a forcément une erreur dans les logs)
                     if($laLigne != 0) {
-                        /*Création des variables de session contenant les informations de l'utilisateur*/
+                        ///////// création des variales de session contenant les informations de l'utilisateur
                         $_SESSION['nom'] = $laLigne['NOM'];
                         $_SESSION['login'] = $laLigne['LOGIN'];
                         $_SESSION['mdp'] = $laLigne['MDP'];
                         $_SESSION['prenom'] = $laLigne['PRENOM'];
                         $_SESSION['droit'] = $laLigne['DROIT'];
-                        $_SESSION['codeUser']= $laLigne['IDUSERS'];
+                        $_SESSION['idUser']= $laLigne['IDUSERS'];
                         ?>
                         <script >
                             document.location.href="index.php?page=Controler&param=Message&var=connexionVrai";
@@ -183,6 +177,62 @@ if(isset($_REQUEST['param']))
                         <?php
                     }
                 }
+                else
+                {
+                    ?>
+                    <script >
+                        document.location.href="index.php?page=Controler&param=Message&var=connexionFauxChamps";
+                    </script>
+                    <?php
+                }
+                ?>
+                <?php
+            }
+
+            case 'Inscription' :
+            {
+                // test si les champs sont remplient
+                if(!empty($_REQUEST['mdp'])&&!empty($_REQUEST['login'])&&!empty($_REQUEST['prenom'])&&!empty($_REQUEST['nom']))
+                {
+                    // test si mdp et mdpConfirmation son egaux
+                    if($_REQUEST['mdp']==$_REQUEST['mdpConfirmation'])
+                    {
+                        // test si le login est dans la bd si pas trouvé =0 si existant =1
+                        if(ComparePasse($_REQUEST['login'])==0)
+                        {
+                            $mdp =sha1(Conversion($_REQUEST['mdp']));
+                            $Pdo->Inscription(Conversion($_REQUEST['nom']),Conversion($_REQUEST['prenom']),Conversion($_REQUEST['login']),$mdp);
+                            ?>
+                            <script >
+                                document.location.href="index.php?page=Controler&param=Message&var=inscriptionVrai";
+                            </script>
+                            <?php
+                        }
+                        else {
+                            ?>
+                            <script >
+                                document.location.href="index.php?page=Controler&param=Message&var=ErreurLogin";
+                            </script>
+                            <?php
+                        }
+                    }
+                    else{
+                        ?>
+                        <script >
+                            document.location.href="index.php?page=Controler&param=Message&var=ErreurPasse";
+                        </script>
+                        <?php
+                    }
+                }
+                else {
+                    ?>
+                    <script >
+                        document.location.href="index.php?page=Controler&param=Message&var=ErreurEmpty";
+                    </script>
+                    <?php
+                }
+                ?>
+                <?php
                 break;
             }
 

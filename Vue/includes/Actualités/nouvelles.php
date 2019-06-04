@@ -1,5 +1,5 @@
 <section>
-	<table border="2">
+	<table class="table">
 		<tr>
 			<th>Titre</th>
 			<th>Texte</th>
