@@ -142,7 +142,7 @@ if(isset($_REQUEST['param']))
 		case 'Image' : 
 		{
             $lesLignesImage=$Pdo->getListImage();
-			include (dirname(__FILE__).'/../Vue/includes/Actualités/retrophotos.php');
+			include (dirname(__FILE__).'/../Vue/includes/Actualites/retrophotos.php');
 			break;
 		}
 
