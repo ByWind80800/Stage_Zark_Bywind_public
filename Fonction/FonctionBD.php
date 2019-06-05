@@ -53,7 +53,7 @@
 
 		public function getListImage()
 		{
-	        $req ="select * from  image ";
+	        $req ="select * from image ";
 	        //echo $req;
 	        $var= Pdofreycenet::$monPdo->query($req);
 	        $lesLignes = $var->fetchAll();
