@@ -8,17 +8,17 @@
                     <!-- Entrée du login -->
                     <div class="form-group">
                         <label for="exampleInputEmail1" class="font1">Login</label>
-                        <input type="text" class="form-control" required="required" placeholder="Login..." name="log">
+                        <input type="text" class="form-control" required="required" placeholder="Login..." name="login">
                     </div>
 
                     <!-- Entrée du mot de passe -->
                     <div class="form-group"style="width: 300px;">
                         <label for="exampleInputPassword1" class="font1">Mot de passe</label>
-                        <input type="password" class="form-control" required="required" id="exampleInputPassword1" placeholder="Mot de passe..." name="mot">
+                        <input type="password" class="form-control" required="required" id="exampleInputPassword1" placeholder="Mot de passe..." name="mdp">
                     </div>
 
                     <!-- Bouton de Connexion -->
-                    <button type="submit" class="btn btn-outline-light text-light marginAuto bg-secondary w-100" value="connexion"><span class="font1">Se connecter</span></button>
+                    <button type="submit" class="btn btn-outline-light text-light marginAuto bg-secondary w-100" value="connexion">Se connecter</button>
                 </form>
             </div>
         </div>

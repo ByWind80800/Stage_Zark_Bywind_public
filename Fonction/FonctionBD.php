@@ -71,28 +71,32 @@
 	        return $lesLignes;
 	    }
 
-    	
+	    //***************FONCTION INSERT************//	
+	    public function insertActu($titreActu,$texteActu)
+    	{
+        	$req = "INSERT INTO actualite (idActu, titreActu, texteActu, dateActu) VALUES(null,'$titreActu','$texteActu',now())";
+        	//echo $req;
+        	Pdofreycenet::$monPdo->exec($req);
+    	}
 
-		//*************Fonction de connexion*******//
-			// public function connexion($login,$mdp)
-	  //   {
-	  //       $req = "SELECT * FROM users WHERE LOGIN='$login' AND MDP='$mdp'";
-	  //       echo $req;
-	  //       $var =Pdofreycenet::$monPdo->query($req);
-	  //       // recupére la ligne corepondant au paramétres rentrés
-	  //       $laLigne = $var->fetch();
-	  //       return $laLigne;
-	  //   }
+    	//*************Fonction de connexion*******//
+			public function connexion($login,$mdp)
+	    {
+	        $req = "SELECT * FROM users WHERE LOGIN='$login' AND MDP='$mdp'";
+	        echo $req;
+	        $var =Pdofreycenet::$monPdo->query($req);
+	        // recupére la ligne corepondant au paramétres rentrés
+	        $laLigne = $var->fetch();
+	        return $laLigne;
+	    }
 
 
-	    /*************Fonction pour Inscription*************/
-	    // public function Inscription($nom,$prenom,$login,$mdp)
-	    // {
-	    //     $req = "INSERT into USERS (IDUSERS, NOM, PRENOM, LOGIN, MDP, DROIT) VALUES(null,'$nom','$prenom','$login','$mdp',0/* par default le droit est défini à zero=utilisateur 1=admin*/)";
-	    //     echo $req;
-	    //     Pdofreycenet::$monPdo->exec($req);
-	    // }
-
-		
-	}
+	    /*************Fonction pour Inscription*************/ #Fini
+	    public function Inscription($nom,$prenom,$login,$mdp)
+	    {
+	        $req = "INSERT into USERS (IDUSERS, NOM, PRENOM, LOGIN, MDP, DROIT) VALUES(null,'$nom','$prenom','$login','$mdp',0/* par default le droit est défini à zero=utilisateur 1=admin*/)";
+	        echo $req;
+	        Pdofreycenet::$monPdo->exec($req);
+	    }
+}
 ?>

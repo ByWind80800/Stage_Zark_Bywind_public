@@ -9,7 +9,7 @@ if(isset($_REQUEST['param']))
 	$param = $_REQUEST['param'];
 	switch ($param) 
 	{
-        ///////////////////// Action renvoie des pages ///////////////////////////////////
+        ///////////////////// INCLUDES POUR LES PAGES VISITEURS ///////////////////////////////////
 		case 'Accueil' : 
 		{
 			include (dirname(__FILE__).'/../Vue/includes/Accueil.php');
@@ -145,6 +145,7 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
+		//INCLUDES POUR LES PAGES ADMIN
 
 		case 'ValidConnexion' :
             {
@@ -156,7 +157,8 @@ if(isset($_REQUEST['param']))
                     /*encrypt le mot de passe à comparé*/
                     $laLigne=$Pdo->connexion(Conversion($login),Conversion($mdp));
                     //on vérifie ensuite si un compte est bien retourné de la bdd (si $laLigne == 0 c'est qu'aucun compte Membre n'est retourné et qu'il y a forcément une erreur dans les logs)
-                    if($laLigne != 0) {
+                    if($laLigne != 0) 
+                    {
                         ///////// création des variales de session contenant les informations de l'utilisateur
                         $_SESSION['nom'] = $laLigne['NOM'];
                         $_SESSION['login'] = $laLigne['LOGIN'];
@@ -179,18 +181,11 @@ if(isset($_REQUEST['param']))
                         <?php
                     }
                 }
-                else
-                {
-                    ?>
-                    <script >
-                        document.location.href="index.php?page=Controler&param=Message&var=connexionFauxChamps";
-                    </script>
-                    <?php
-                }
-                ?>
-                <?php
             }
 
+
+
+            //GESTION DES PAGES CONNEXION ET INSCRIPTION//
             case 'Inscription' :
             {
                 // test si les champs sont remplient
@@ -210,7 +205,8 @@ if(isset($_REQUEST['param']))
                             </script>
                             <?php
                         }
-                        else {
+                        else 
+                        {
                             ?>
                             <script >
                                 document.location.href="index.php?page=Controler&param=Message&var=ErreurLogin";
@@ -218,7 +214,8 @@ if(isset($_REQUEST['param']))
                             <?php
                         }
                     }
-                    else{
+                    else
+                    {
                         ?>
                         <script >
                             document.location.href="index.php?page=Controler&param=Message&var=ErreurPasse";
@@ -226,7 +223,8 @@ if(isset($_REQUEST['param']))
                         <?php
                     }
                 }
-                else {
+                else 
+                {
                     ?>
                     <script >
                         document.location.href="index.php?page=Controler&param=Message&var=ErreurEmpty";
@@ -262,4 +260,4 @@ if(isset($_REQUEST['param']))
 			break;
 
 	}
-}
+}		
