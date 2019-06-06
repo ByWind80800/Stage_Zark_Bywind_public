@@ -233,11 +233,11 @@ if(isset($_REQUEST['param']))
                 if(!empty($_FILES['Image']['name']))
                 {
                     $var=TranfertImage();
-                    $Pdo->insertImage($var, 1);
+                    $Pdo->insertImage(1, $var);
                     //$Pdo->ajoutA("");
                     ?>
                     <script >
-                        //document.location.href="index.php?page=Controler&param=Message&var=AjoutMedia";
+                        document.location.href="index.php?page=Controler&param=Message&var=AjoutMedia";
                     </script>
                     <?php
                 }
