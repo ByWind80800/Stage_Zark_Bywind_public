@@ -197,16 +197,7 @@ if(isset($_REQUEST['param']))
 		{
 			include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutImage.php');
 			break;
-		} 
-
-
-		//////////////////// FORMULAIRE DE MOFIFICATION ////////////////////
-
-		case 'ModifNouvelle' :
-		{
-			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifNouvelle.php');
-			break;
-		} 
+		}
 
 
 
@@ -259,7 +250,7 @@ if(isset($_REQUEST['param']))
             }
 
 
-		///// Action de modification /////
+//////////////////// FORMULAIRE DE MODIFICATION ////////////////////
 
 		case 'modifnouvelle' :
 		{
@@ -281,6 +272,8 @@ if(isset($_REQUEST['param']))
                 <?php
 			break;
 		}
+
+		
 //////////////////// ACTION SUPPRIMER ////////////////////
 		case 'SupprNouvelle' :
 		{
