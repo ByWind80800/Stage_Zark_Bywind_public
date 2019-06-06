@@ -22,6 +22,21 @@
 				}
 				?>
 			</div>
+			<div>
+			<?php
+				if(isset($_SESSION['droit']))
+				{
+					?>
+					<td>
+						<a href='index.php?page=Controler&param=ajoutimage'>
+							<i class='fas fa-plus' fa-3x>	
+							</i>
+						</a>
+					</td>
+					<?php
+				}
+			?>
+			</div>
 		</div>
 	</div>
 

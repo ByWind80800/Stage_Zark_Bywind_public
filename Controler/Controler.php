@@ -197,6 +197,12 @@ if(isset($_REQUEST['param']))
 			break;
 		} 
 
+		case 'ajoutimage' :
+		{
+			include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutImage.php');
+			break;
+		} 
+
 
 
 //////////////////// ACTION AJOUTER ////////////////////
@@ -221,6 +227,30 @@ if(isset($_REQUEST['param']))
                 }
                 break;	
 		}
+
+		case 'AjoutImage':
+            {
+                if(!empty($_FILES['Image']['name']))
+                {
+                    $var=TranfertImage();
+                    $Pdo->insertImage($var, 1);
+                    //$Pdo->ajoutA("");
+                    ?>
+                    <script >
+                        //document.location.href="index.php?page=Controler&param=Message&var=AjoutMedia";
+                    </script>
+                    <?php
+                }
+                else
+                {
+                    ?>
+                    <script >
+                        document.location.href="index.php?page=Controler&param=Message&var=ErreurEmpty";
+                    </script>
+                    <?php
+                }
+                break;
+            }
 
 
 //////////////////// ACTION MODIFIER ////////////////////
