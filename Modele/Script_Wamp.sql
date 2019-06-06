@@ -186,7 +186,7 @@ VALUES (NULL, "3","titre 1", "Texte 1", "2019/06/03"),
 (NULL, "3","titre 3", "Texte 3", "2019/05/24");
 
 INSERT INTO USERS
-VALUES (null,  "Fargier", "Jean-Marc", "J-MFargier", "d033e22ae348aeb5660fc2140aec35850c4da997");
+VALUES (null, "Fargier", "Jean-Marc", "J-MFargier", "d033e22ae348aeb5660fc2140aec35850c4da997", 1);
 
 INSERT INTO IMAGE 
 VALUES (null, 1, "photos_paysage/les_Barthes/f0277034.jpg"),
