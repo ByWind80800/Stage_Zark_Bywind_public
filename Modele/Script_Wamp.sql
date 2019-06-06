@@ -193,4 +193,7 @@ VALUES (null, 1, "photos_paysage/les_Barthes/f0277034.jpg")
 (null, 1, "photos_paysage/les_sucs_autour_de_freycenet_la_tour/f0538666.jpg")
 (null, 1, "photos_paysage/photos_paysage_freycenet_la_tour/f0436074.jpg")
 (null, 1, "photos_paysage/église de la mairie.jpg")
-#ETC...
+
+
+INSERT INTO entreprises
+VALUES (null, "entreprises 1", "gérant 1", "Corps métier 1");
