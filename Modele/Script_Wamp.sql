@@ -185,6 +185,12 @@ VALUES (NULL, "3","titre 1", "Texte 1", "2019/06/03"),
 (NULL, "3","titre 2", "Texte 2", "2019/06/01"),
 (NULL, "3","titre 3", "Texte 3", "2019/05/24");
 
+INSERT INTO USERS
+VALUES (null,  "Fargier", "Jean-Marc", "J-MFargier", "d033e22ae348aeb5660fc2140aec35850c4da997");
+
 INSERT INTO IMAGE 
-VALUES (null, 1, ),
+VALUES (null, 1, "photos_paysage/les_Barthes/f0277034.jpg")
+(null, 1, "photos_paysage/les_sucs_autour_de_freycenet_la_tour/f0538666.jpg")
+(null, 1, "photos_paysage/photos_paysage_freycenet_la_tour/f0436074.jpg")
+(null, 1, "photos_paysage/église de la mairie.jpg")
 #ETC...
