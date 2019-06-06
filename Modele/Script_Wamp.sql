@@ -184,3 +184,7 @@ INSERT INTO ACTUALITE
 VALUES (NULL, "3","titre 1", "Texte 1", "2019/06/03"),
 (NULL, "3","titre 2", "Texte 2", "2019/06/01"),
 (NULL, "3","titre 3", "Texte 3", "2019/05/24");
+
+INSERT INTO IMAGE 
+VALUES (null, 1, ),
+#ETC...
