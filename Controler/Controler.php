@@ -193,18 +193,18 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
+		case 'ajoutimage' :
+		{
+			include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutImage.php');
+			break;
+		} 
 
-		//////////////////// ACTION AJOUTER ////////////////////
+
+		//////////////////// FORMULAIRE DE MOFIFICATION ////////////////////
 
 		case 'ModifNouvelle' :
 		{
 			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifNouvelle.php');
-			break;
-		} 
-
-		case 'ajoutimage' :
-		{
-			include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutImage.php');
 			break;
 		} 
 
@@ -234,17 +234,6 @@ if(isset($_REQUEST['param']))
                 break;	
 		}
 
-
-		///// Formulaire de modification /////
-
-		case 'modifnouvelle' :
-		{
-			$lesActus = $Pdo->getListActu();
-			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifNouvelle.php');
-			break;
-		} 
-
-
 		case 'AjoutImage':
             {
                 if(!empty($_FILES['Image']['name']))
@@ -268,6 +257,16 @@ if(isset($_REQUEST['param']))
                 }
                 break;
             }
+
+
+		///// Action de modification /////
+
+		case 'modifnouvelle' :
+		{
+			$lesActus = $Pdo->getListActu();
+			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifNouvelle.php');
+			break;
+		} 
 
 
 
