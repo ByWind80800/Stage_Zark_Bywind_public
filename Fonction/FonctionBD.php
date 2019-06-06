@@ -78,7 +78,12 @@
         	//echo $req;
         	Pdofreycenet::$monPdo->exec($req);
     	}
-
+    	public function insertImage($idTypeMedia,$cheminIMG)
+	    {
+	        $req = "INSERT INTO image (IDIMG, IDTYPEMEDIA, CHEMINIMG) VALUES(null,1,'$cheminIMG')";
+	        echo $req;
+	        Pdofreycenet::$monPdo->exec($req);
+	    }
 
     	//***************FONCTION UPDATE***************//
     	public function modifActu($titreActu,$texteActu,$id)

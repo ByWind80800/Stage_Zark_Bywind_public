@@ -107,7 +107,7 @@ function TranfertImage()
     {
         // Copie dans le repertoire du script avec un prenom_nom
         // incluant l'heure a la seconde pres
-        $repertoireDestination = dirname(__FILE__)."/../Vue/img/Galerie/";
+        $repertoireDestination = dirname(__FILE__)."/../Vue/img/";
 
         $prenom_nomDestination = "fichier_du_".date("YmdHis").".".$extensionFichier;
 

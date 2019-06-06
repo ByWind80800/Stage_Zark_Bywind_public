@@ -193,7 +193,25 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
+
 		//////////////////// ACTION AJOUTER ////////////////////
+
+		case 'ModifNouvelle' :
+		{
+			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifNouvelle.php');
+			break;
+		} 
+
+		case 'ajoutimage' :
+		{
+			include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutImage.php');
+			break;
+		} 
+
+
+
+//////////////////// ACTION AJOUTER ////////////////////
+
 		case 'AjoutActu':
 		{
 			if(empty($_POST['titre'])||empty($_POST['texteActu']))
@@ -216,7 +234,6 @@ if(isset($_REQUEST['param']))
                 break;	
 		}
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		///// Formulaire de modification /////
 
@@ -226,6 +243,31 @@ if(isset($_REQUEST['param']))
 			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifNouvelle.php');
 			break;
 		} 
+
+
+		case 'AjoutImage':
+            {
+                if(!empty($_FILES['Image']['name']))
+                {
+                    $var=TranfertImage();
+                    $Pdo->insertImage(1, $var);
+                    //$Pdo->ajoutA("");
+                    ?>
+                    <script >
+                        document.location.href="index.php?page=Controler&param=Message&var=AjoutMedia";
+                    </script>
+                    <?php
+                }
+                else
+                {
+                    ?>
+                    <script >
+                        document.location.href="index.php?page=Controler&param=Message&var=ErreurEmpty";
+                    </script>
+                    <?php
+                }
+                break;
+            }
 
 
 
