@@ -183,8 +183,63 @@ if(isset($_REQUEST['param']))
                 }
             }
 
+////////////////// PAGE ADMINISTRATEUR /////////////////
+
+		case 'ajoutnouvelle':
+		{
+			include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutNouvelle.php');
+			break;
+		}
+
+		case 'ModifNouvelle' :
+		{
+			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifNouvelle.php');
+			break;
+		} 
 
 
+
+//////////////////// ACTION AJOUTER ////////////////////
+		case 'AjoutActu':
+		{
+			if(empty($_POST['titre'])||empty($_POST['texteActu']))
+                {
+                    ?>
+                    <script>
+                        document.location.href="index.php?page=Controler&param=Message&var=connexionFauxChampsActu";
+                    </script>
+                    <?php
+                }
+                else
+                {
+                	$Pdo->insertActu(Conversion($_POST['titre']),Conversion($_POST['texteActu']));
+                    ?>
+                    <script >
+                        document.location.href="index.php?page=Controler&param=Message&var=AjoutActu";
+                    </script>
+                    <?php
+                }
+                break;	
+		}
+
+
+//////////////////// ACTION MODIFIER ////////////////////
+		case 'ModifActu':
+		{
+			$Pdo->modifActu(Conversion($_POST['titre']),Conversion($_POST['texteActu']),$_POST['modifId']);
+                ?>
+                <script >
+                    document.location.href="index.php?page=Controler&param=Admin";
+                </script>
+                <?php
+			break;
+		}
+//////////////////// ACTION SUPPRIMER ////////////////////
+		case 'SuppActu' :
+		{
+
+			break;
+		}
             //GESTION DES PAGES CONNEXION ET INSCRIPTION//
             case 'Inscription' :
             {

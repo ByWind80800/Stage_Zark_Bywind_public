@@ -74,12 +74,21 @@
 	    //***************FONCTION INSERT************//	
 	    public function insertActu($titreActu,$texteActu)
     	{
-        	$req = "INSERT INTO actualite (idActu, titreActu, texteActu, dateActu) VALUES(null,'$titreActu','$texteActu',now())";
+        	$req = "INSERT INTO actualite (IDACTU, IDTYPEMEDIA, TITREACTU, TEXTEACTU, DATEACTU) VALUES(null,3,'$titreActu','$texteActu',now())";
         	//echo $req;
         	Pdofreycenet::$monPdo->exec($req);
     	}
 
-    	//*************Fonction de connexion*******//
+
+    	//***************FONCTION UPDATE***************//
+    	public function modifActu($titreActu,$texteActu,$id)
+    	{
+        	$req = "update actualite set TITREACTU ='$titreActu' ,TEXTEACTU ='$texteActu' where IDACTU='$id'";
+        	//echo $req;
+        	Pdofreycene::$monPdo->exec($req);
+    	}
+
+    	//***************FONCTION DE CONNEXION***************//
 			public function connexion($login,$mdp)
 	    {
 	        $req = "SELECT * FROM users WHERE LOGIN='$login' AND MDP='$mdp'";
@@ -91,7 +100,7 @@
 	    }
 
 
-	    /*************Fonction pour Inscription*************/ #Fini
+	    /***************FONCTION POUR L'INSCRIPTION***************/ #Fini
 	    public function Inscription($nom,$prenom,$login,$mdp)
 	    {
 	        $req = "INSERT into USERS (IDUSERS, NOM, PRENOM, LOGIN, MDP, DROIT) VALUES(null,'$nom','$prenom','$login','$mdp',0/* par default le droit est défini à zero=utilisateur 1=admin*/)";
