@@ -35,7 +35,7 @@
 
 		public function getListActu()
 		{
-			$req = "SELECT TITREACTU, TEXTEACTU, DATEACTU
+			$req = "SELECT IDACTU,TITREACTU, TEXTEACTU, DATEACTU
 					FROM ACTUALITE
 					ORDER BY DATEACTU DESC";
 			// echo $req;
@@ -83,10 +83,21 @@
     	//***************FONCTION UPDATE***************//
     	public function modifActu($titreActu,$texteActu,$id)
     	{
-        	$req = "update actualite set TITREACTU ='$titreActu' ,TEXTEACTU ='$texteActu' where IDACTU='$id'";
+        	$req = "UPDATE actualite set TITREACTU ='$titreActu' ,TEXTEACTU ='$texteActu' where IDACTU=$id";
         	//echo $req;
         	Pdofreycene::$monPdo->exec($req);
     	}
+
+
+    	//******************FONCTION DELETE******************//
+    	public function supprimerActu($id)
+    	{
+        	$req = "DELETE from actualite where IDACTU=$id";
+        	//echo $req;
+        	Pdofreycenet::$monPdo->exec($req);
+    	}
+
+
 
     	//***************FONCTION DE CONNEXION***************//
 			public function connexion($login,$mdp)

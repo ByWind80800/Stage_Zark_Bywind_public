@@ -185,21 +185,15 @@ if(isset($_REQUEST['param']))
 
 ////////////////// PAGE ADMINISTRATEUR /////////////////
 
+          	////// Formulaire d'ajout //////
+
 		case 'ajoutnouvelle':
 		{
 			include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutNouvelle.php');
 			break;
 		}
 
-		case 'ModifNouvelle' :
-		{
-			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifNouvelle.php');
-			break;
-		} 
-
-
-
-//////////////////// ACTION AJOUTER ////////////////////
+		//////////////////// ACTION AJOUTER ////////////////////
 		case 'AjoutActu':
 		{
 			if(empty($_POST['titre'])||empty($_POST['texteActu']))
@@ -222,6 +216,18 @@ if(isset($_REQUEST['param']))
                 break;	
 		}
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		///// Formulaire de modification /////
+
+		case 'modifnouvelle' :
+		{
+			$lesActus = $Pdo->getListActu();
+			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifNouvelle.php');
+			break;
+		} 
+
+
 
 //////////////////// ACTION MODIFIER ////////////////////
 		case 'ModifActu':
@@ -229,17 +235,23 @@ if(isset($_REQUEST['param']))
 			$Pdo->modifActu(Conversion($_POST['titre']),Conversion($_POST['texteActu']),$_POST['modifId']);
                 ?>
                 <script >
-                    document.location.href="index.php?page=Controler&param=Admin";
+                    document.location.href="index.php?page=Controler&param=nouvelles";
                 </script>
                 <?php
 			break;
 		}
 //////////////////// ACTION SUPPRIMER ////////////////////
-		case 'SuppActu' :
+		case 'SupprNouvelle' :
 		{
-
-			break;
+			$Pdo->supprimerActu($_REQUEST['idActu']);
+                ?>
+                <script >
+                    document.location.href="index.php?page=Controler&param=nouvelles";
+                </script>
+                <?php
+                break;
 		}
+
             //GESTION DES PAGES CONNEXION ET INSCRIPTION//
             case 'Inscription' :
             {
