@@ -106,6 +106,12 @@
 	        echo $req;
 	        Pdofreycenet::$monPdo->exec($req);
 	    }
+	    public function insertSociete($nomentreprise,$nomdudirigeant,$corpsmetier)
+    	{
+        	$req = "INSERT INTO entreprises (IDENTREPRISES, NOMENTREPRISE, NOMGERANT, CORPSMETIER) VALUES(null,'$nomentreprise','$nomdudirigeant','$corpsmetier')";
+        	//echo $req;
+        	Pdofreycenet::$monPdo->exec($req);
+    	}
 
 	    public function insertElu($nom, $prenom, $fonction)
 	    {
@@ -122,12 +128,26 @@
         	Pdofreycenet::$monPdo->exec($req);
     	}
 
+    	public function modifSociete($nomentreprise,$nomdugerant,$corpsmetier,$id)
+    	{
+        	$req = "UPDATE entreprises set NOMENTREPRISE ='$nomentreprise' ,NOMGERANT ='$nomdugerant' ,CORPSMETIER ='$corpsmetier' where IDENTREPRISES=$id";
+        	//echo $req;
+        	Pdofreycenet::$monPdo->exec($req);
+    	}
+
 
     	//******************FONCTION DELETE******************//
     	public function supprimerActu($id)
     	{
         	$req = "DELETE from actualite where IDACTU=$id";
         	//echo $req;
+        	Pdofreycenet::$monPdo->exec($req);
+    	}
+
+    	public function supprimerSociete($id)
+    	{
+        	$req = "DELETE from entreprises where IDENTREPRISES=$id";
+        	echo $req;
         	Pdofreycenet::$monPdo->exec($req);
     	}
 

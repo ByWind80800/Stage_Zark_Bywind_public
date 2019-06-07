@@ -24,12 +24,12 @@
                      </div>
                      <div class="form-group">
                          <label>Nom du Gérant</label>
-                         <input type="text" class="form-control" name="nomdugérant"
+                         <input type="text" class="form-control" name="nomgerant"
                                 value="<?php echo $uneSociete['NOMGERANT'] ?>">
                      </div>
                      <div class="form-group">
                          <label>Corps de métier de l'entreprise</label>
-                         <input type="text" class="form-control" name="corpsdemétierdel'entreprise"
+                         <input type="text" class="form-control" name="corpsmetier"
                                 value="<?php echo $uneSociete['CORPSMETIER'] ?>">
                      </div>
                      <input type="hidden" value="<?php echo $_REQUEST['idEntreprises'] ?>" name="modifId">

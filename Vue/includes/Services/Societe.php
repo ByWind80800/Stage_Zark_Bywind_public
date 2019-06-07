@@ -56,7 +56,7 @@
 							</a>
 						</th>
 						<th>
-							<a href='index.php?page=Controler&param=SupprSociete'>
+							<a href='index.php?page=Controler&param=SupprSociete&idEntreprises=<?php echo $uneSociete['IDENTREPRISES']?>'>
 								<i class='fas fa-trash-alt fa-2x'></i>
 							</a>
 						</th>
