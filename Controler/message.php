@@ -47,6 +47,21 @@ if(isset($_REQUEST['var'])) {
                 <?php
                 break;
             }
+        case 'AjoutSociete':
+            {
+                ?>
+                <div class="card">
+                    <div class="card-body bg-success">
+                        <h1 class="card-text"><b class="font2">Société ajoutée !</b></h1>
+                        <p class="font3">(Retour automatique à Administration)</p>
+                    </div>
+                </div>
+                <script>
+                    setTimeout("location.href = 'index.php?page=Controler&param=Admin';", 3000);
+                </script>
+                <?php
+                break;
+            }
         case'AjoutMusique':
         {
            ?>

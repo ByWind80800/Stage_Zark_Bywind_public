@@ -93,6 +93,7 @@ if(isset($_REQUEST['param']))
 
 		case 'Societe':
 		{
+			$lesSocietes=$Pdo->getListSocietes();
 			include(dirname(__FILE__).'/../Vue/includes/Services/Societe.php');
 			break;
 		}
@@ -200,10 +201,18 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
+
 		case 'ajoutElu':
 		{
 			include (dirname(__FILE__).'/../Vue/includes/Admin.AjoutElu.php');
 		}
+
+		case 'ajoutsociete':
+		{
+			include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutSociete.php');
+			break;
+		}
+
 
 
 //////////////////// ACTION AJOUTER ////////////////////
@@ -214,7 +223,7 @@ if(isset($_REQUEST['param']))
                 {
                     ?>
                     <script>
-                        document.location.href="index.php?page=Controler&param=Message&var=connexionFauxChampsActu";
+                        document.location.href="index.php?page=Controler&param=Message&var=ErreurEmpty";
                     </script>
                     <?php
                 }
@@ -254,6 +263,28 @@ if(isset($_REQUEST['param']))
                 break;
             }
 
+            case 'AjoutSociete':
+		{
+			if(empty($_POST['nomentreprise'])||empty($_POST['nomdudirigeant']))
+                {
+                    ?>
+                    <script>
+                        document.location.href="index.php?page=Controler&param=Message&var=ErreurEmpty";
+                    </script>
+                    <?php
+                }
+                else
+                {
+                	$Pdo->insertSociete(Conversion($_POST['nomentreprise']),Conversion($_POST['nomdudirigeant']));
+                    ?>
+                    <script >
+                        document.location.href="index.php?page=Controler&param=Message&var=AjoutSociete";
+                    </script>
+                    <?php
+                }
+                break;	
+		}
+
 
 //////////////////// FORMULAIRE DE MODIFICATION ////////////////////
 
@@ -261,6 +292,13 @@ if(isset($_REQUEST['param']))
 		{
 			$lesActus = $Pdo->getListActu();
 			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifNouvelle.php');
+			break;
+		} 
+
+		case 'modifsociete' :
+		{
+			$lesSocietes = $Pdo->getListSociete();
+			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifSociete.php');
 			break;
 		} 
 
@@ -286,6 +324,17 @@ if(isset($_REQUEST['param']))
                 ?>
                 <script >
                     document.location.href="index.php?page=Controler&param=nouvelles";
+                </script>
+                <?php
+                break;
+		}
+
+		case 'SupprSociete' :
+		{
+			$Pdo->supprimerSociete($_REQUEST['idEntreprises']);
+                ?>
+                <script >
+                    document.location.href="index.php?page=Controler&param=Societe";
                 </script>
                 <?php
                 break;

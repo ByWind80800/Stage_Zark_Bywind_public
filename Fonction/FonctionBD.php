@@ -50,6 +50,7 @@
 			return $lesActus;
 		}
 
+
 		public function getListElus()
 		{
 			$req = "SELECT *
@@ -60,6 +61,17 @@
 			$lesElus = $var->fetchAll();
 			return $lesElus;
 		}
+
+		public function getListSocietes()
+		{
+			$req = "SELECT *
+					FROM entreprises";
+			// echo $req;
+			$res = Pdofreycenet::$monPdo->query($req);
+			$lesSocietes = $res->fetchAll();
+			return $lesSocietes;
+		}
+
 
 		public function getListImage()
 		{
