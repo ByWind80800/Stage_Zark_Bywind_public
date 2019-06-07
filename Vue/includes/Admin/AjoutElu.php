@@ -1,6 +1,6 @@
 <section>
 	<div class="container" style="padding: 10px;">
-        <h1>Ajouter une actualité</h1>
+        <h1>Ajouter un Elu</h1>
         <div class="d-flex flex-row justify-content-center">
             <form enctype="multipart/form-data" method="POST" action="index.php?page=Controler&param=AjoutActu">
                 <div class="form-group">
@@ -15,7 +15,4 @@
             </form>
         </div>
     </div>
-
-
-
 </section>

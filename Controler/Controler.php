@@ -50,6 +50,7 @@ if(isset($_REQUEST['param']))
 
 		case 'ConseilMunicipal':
 		{
+			$lesElus = $Pdo->getListElus();
 			include(dirname(__FILE__).'/../Vue/includes/Commune/ConseilMunicipal.php');
 			break;
 		}
@@ -199,6 +200,10 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
+		case 'ajoutElu':
+		{
+			include (dirname(__FILE__).'/../Vue/includes/Admin.AjoutElu.php');
+		}
 
 
 //////////////////// ACTION AJOUTER ////////////////////
@@ -273,7 +278,7 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
-		
+
 //////////////////// ACTION SUPPRIMER ////////////////////
 		case 'SupprNouvelle' :
 		{

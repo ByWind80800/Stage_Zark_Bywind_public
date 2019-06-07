@@ -1,6 +1,14 @@
 <section>
 	<table class="table">
 		<tr>
+			<?php
+			if(isset($_SESSION['droit']))
+			{
+				?>
+				<th></th>
+				<?php
+			}
+			?>
 			<th>Titre</th>
 			<th>Texte</th>
 			<th>Date</th>
@@ -30,11 +38,11 @@
 				<td></td>
 				<td></td>
 				<td></td>
+				<td></td>
 				<?php
 			}
 		?>
 		</tr>
-		
 		<!-- Affichage du tableau -->
 			<?php
 				foreach ($lesActus as $uneActu) 
@@ -58,7 +66,7 @@
 							</a>
 						</th>
 						<th>
-							<a href='index.php?page=Controler&param=SupprNouvelle'>
+							<a href='index.php?page=Controler&param=SupprNouvelle&idActu=<?php echo $uneActu['IDACTU']?>'>
 								<i class='fas fa-trash-alt fa-2x'></i>
 							</a>
 						</th>

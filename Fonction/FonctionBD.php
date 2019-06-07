@@ -50,6 +50,16 @@
 			return $lesActus;
 		}
 
+		public function getListElus()
+		{
+			$req = "SELECT *
+					FROM elucm
+					ORDER BY NOMELU";
+					//echo $req
+			$var= Pdofreycenet::$monPdo->query($req);
+			$lesElus = $var->fetchAll();
+			return $lesElus;
+		}
 
 		public function getListImage()
 		{
@@ -90,7 +100,7 @@
     	{
         	$req = "UPDATE actualite set TITREACTU ='$titreActu' ,TEXTEACTU ='$texteActu' where IDACTU=$id";
         	//echo $req;
-        	Pdofreycene::$monPdo->exec($req);
+        	Pdofreycenet::$monPdo->exec($req);
     	}
 
 
@@ -98,7 +108,7 @@
     	public function supprimerActu($id)
     	{
         	$req = "DELETE from actualite where IDACTU=$id";
-        	//echo $req;
+        	echo $req;
         	Pdofreycenet::$monPdo->exec($req);
     	}
 

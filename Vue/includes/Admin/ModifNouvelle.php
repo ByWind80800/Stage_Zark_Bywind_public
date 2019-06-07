@@ -16,7 +16,7 @@
          {
              ?>
              <div class="d-flex flex-row justify-content-center">
-                <form enctype="multipart/form-data" method="POST" action="index.php?page=Controler&param=modifierActu">
+                <form enctype="multipart/form-data" method="POST" action="index.php?page=Controler&param=ModifActu">
                      <div class="form-group">
                          <label>Titre</label>
                          <input type="text" class="form-control" name="titre"
