@@ -275,7 +275,7 @@ if(isset($_REQUEST['param']))
                 }
                 else
                 {
-                	$Pdo->insertSociete(Conversion($_POST['nomentreprise']),Conversion($_POST['nomdudirigeant']));
+                	$Pdo->insertSociete(Conversion($_POST['nomentreprise']),Conversion($_POST['nomdudirigeant']),Conversion($_POST['corpsmetier']));
                     ?>
                     <script >
                         document.location.href="index.php?page=Controler&param=Message&var=AjoutSociete";
@@ -297,7 +297,7 @@ if(isset($_REQUEST['param']))
 
 		case 'modifsociete' :
 		{
-			$lesSocietes = $Pdo->getListSociete();
+			$lesSocietes = $Pdo->getListSocietes();
 			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifSociete.php');
 			break;
 		} 
@@ -315,6 +315,16 @@ if(isset($_REQUEST['param']))
                 <?php
 			break;
 		}
+
+        case 'ModifSociete':
+        {
+            $Pdo->modifSociete(Conversion($_POST['nomentreprise']),Conversion($_POST['nomgerant']),Conversion($_POST['corpsmetier']),$_POST['modifId']);?>
+                <script >
+                    document.location.href="index.php?page=Controler&param=Societe";
+                </script>
+                <?php
+            break;
+        }
 
 
 //////////////////// ACTION SUPPRIMER ////////////////////
