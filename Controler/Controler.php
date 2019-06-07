@@ -31,6 +31,7 @@ if(isset($_REQUEST['param']))
 
 		case 'agenda':
 		{
+            $lesEvents=$Pdo->getListEvent();
 			include(dirname(__FILE__).'/../Vue/includes/Actualites/agenda.php');
 			break;
 		}
@@ -178,6 +179,12 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
+        case 'ajoutevent':
+        {
+            include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutEvent.php');
+            break;
+        }
+
 
 
 //////////////////// ACTION AJOUTER ////////////////////
@@ -272,6 +279,28 @@ if(isset($_REQUEST['param']))
                 break;	
 		}
 
+        case 'AjoutEvent':
+        {
+            if(empty($_POST['libelle'])||empty($_POST['descriptif']))
+                {
+                    ?>
+                    <script>
+                        document.location.href="index.php?page=Controler&param=Message&var=ErreurEmpty";
+                    </script>
+                    <?php
+                }
+                else
+                {
+                    $Pdo->insertEvent(Conversion($_POST['libelle']),Conversion($_POST['descriptif']));
+                    ?>
+                    <script >
+                        document.location.href="index.php?page=Controler&param=Message&var=AjoutEvent";
+                    </script>
+                    <?php
+                }
+                break;  
+        }
+
 
 //////////////////// FORMULAIRE DE MODIFICATION ////////////////////
 
@@ -288,6 +317,13 @@ if(isset($_REQUEST['param']))
 			include (dirname(__FILE__).'/../Vue/includes/Admin/ModifSociete.php');
 			break;
 		} 
+
+        case 'modifevent' :
+        {
+            $lesEvents = $Pdo->getListEvent();
+            include (dirname(__FILE__).'/../Vue/includes/Admin/ModifEvent.php');
+            break;
+        } 
 
 
 
@@ -308,6 +344,17 @@ if(isset($_REQUEST['param']))
             $Pdo->modifSociete(Conversion($_POST['nomentreprise']),Conversion($_POST['nomgerant']),Conversion($_POST['corpsmetier']),$_POST['modifId']);?>
                 <script >
                     document.location.href="index.php?page=Controler&param=Societe";
+                </script>
+                <?php
+            break;
+        }
+
+        case 'ModifEvent':
+        {
+            $Pdo->ModifEvent(Conversion($_POST['libelle']),Conversion($_POST['descriptif']),$_POST['modifId']);
+                ?>
+                <script >
+                    document.location.href="index.php?page=Controler&param=agenda";
                 </script>
                 <?php
             break;
@@ -346,6 +393,17 @@ if(isset($_REQUEST['param']))
             </script>
             <?php
             break;
+        }
+
+        case 'SupprEvent' :
+        {
+            $Pdo->supprimerEvent($_REQUEST['idEvent']);
+                ?>
+                <script >
+                    document.location.href="index.php?page=Controler&param=agenda";
+                </script>
+                <?php
+                break;
         }
 
 

@@ -93,6 +93,16 @@
 	        return $lesLignes;
 	    }
 
+	    public function getListEvent()
+		{
+			$req = "SELECT *
+					FROM evenement";
+			// echo $req;
+			$res = Pdofreycenet::$monPdo->query($req);
+			$lesEvents = $res->fetchAll();
+			return $lesEvents;
+		}
+
 	    //***************FONCTION INSERT************//	
 	    public function insertActu($titreActu,$texteActu)
     	{
@@ -120,6 +130,13 @@
 	    	Pdofreycenet::$monPdo->exec($req);
 	    }
 
+	    public function insertEvent($libelle,$descriptif)
+    	{
+        	$req = "INSERT INTO evenement (IDEVENT, LIBELLEEVENT, DESCRIPTIF) VALUES(null,'$libelle','$descriptif')";
+        	//echo $req;
+        	Pdofreycenet::$monPdo->exec($req);
+    	}
+
     	//***************FONCTION UPDATE***************//
     	public function modifActu($titreActu,$texteActu,$id)
     	{
@@ -131,6 +148,13 @@
     	public function modifSociete($nomentreprise,$nomdugerant,$corpsmetier,$id)
     	{
         	$req = "UPDATE entreprises set NOMENTREPRISE ='$nomentreprise' ,NOMGERANT ='$nomdugerant' ,CORPSMETIER ='$corpsmetier' where IDENTREPRISES=$id";
+        	//echo $req;
+        	Pdofreycenet::$monPdo->exec($req);
+    	}
+
+    	public function modifEvent($libelle,$descriptif,$id)
+    	{
+        	$req = "UPDATE evenement set LIBELLEEVENT ='$libelle' ,DESCRIPTIF ='$descriptif' where IDEVENT=$id";
         	//echo $req;
         	Pdofreycenet::$monPdo->exec($req);
     	}
@@ -156,6 +180,13 @@
     		$req = "DELETE FROM elucm where IDELU = $id";
     		echo $req;
     		Pdofreycenet::$monPdo->exec($req);
+    	}
+
+    	public function supprimerEvent($id)
+    	{
+        	$req = "DELETE from evenement where IDEVENT=$id";
+        	//echo $req;
+        	Pdofreycenet::$monPdo->exec($req);
     	}
 
 

@@ -77,21 +77,21 @@ if(isset($_REQUEST['var'])) {
                 <?php
                 break;
             }
-        case'AjoutMusique':
-        {
-           ?>
+        case 'AjoutEvent':
+            {
+                ?>
                 <div class="card">
                     <div class="card-body bg-success">
-                        <h1 class="card-text"><b class="font2">Musique ajoutée !</b></h1>
-                        <p class="font3">(Retour automatique à Admin_Musique)</p>
+                        <h1 class="card-text"><b class="font2">Évènement ajoutée !</b></h1>
+                        <p class="font3">(Retour automatique à Administration)</p>
                     </div>
                 </div>
                 <script>
-                    setTimeout("location.href = 'index.php?page=Controler&param=Admin_Musique';", 3000);
+                    setTimeout("location.href = 'index.php?page=Controler&param=Admin';", 3000);
                 </script>
                 <?php
-                break; 
-        }
+                break;
+            }
 
 //Code LAURA//
 
