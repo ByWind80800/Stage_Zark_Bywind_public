@@ -47,6 +47,21 @@ if(isset($_REQUEST['var'])) {
                 <?php
                 break;
             }
+        case 'AjoutElu':
+        {
+            ?>
+            <div class="card">
+                    <div class="card-body bg-success">
+                        <h1 class="card-text"><b class="font2">Elu du conseil municipal ajouté !</b></h1>
+                        <p class="font3">(Retour automatique à la page des conseillés municipaux)</p>
+                    </div>
+                </div>
+                <script>
+                    setTimeout("location.href = 'index.php?page=Controler&param=ConseilMunicipal';", 3000);
+                </script>
+            <?php
+            break;
+        }
         case 'AjoutSociete':
             {
                 ?>

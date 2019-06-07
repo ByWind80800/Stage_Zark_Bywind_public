@@ -107,6 +107,13 @@
 	        Pdofreycenet::$monPdo->exec($req);
 	    }
 
+	    public function insertElu($nom, $prenom, $fonction)
+	    {
+	    	$req = "INSERT INTO elucm VALUES (null, '$nom', '$prenom', '$fonction', 'photo')";
+	    	//echo $req;
+	    	Pdofreycenet::$monPdo->exec($req);
+	    }
+
     	//***************FONCTION UPDATE***************//
     	public function modifActu($titreActu,$texteActu,$id)
     	{
@@ -120,8 +127,15 @@
     	public function supprimerActu($id)
     	{
         	$req = "DELETE from actualite where IDACTU=$id";
-        	echo $req;
+        	//echo $req;
         	Pdofreycenet::$monPdo->exec($req);
+    	}
+
+    	public function supprimerElu($id)
+    	{
+    		$req = "DELETE FROM elucm where IDELU = $id";
+    		echo $req;
+    		Pdofreycenet::$monPdo->exec($req);
     	}
 
 

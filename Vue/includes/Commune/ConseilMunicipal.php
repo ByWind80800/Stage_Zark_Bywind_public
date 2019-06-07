@@ -1,5 +1,5 @@
 <section>
-	<table border="2" class="tableau">
+	<table border="2" class="table">
 		<tr>
 			<?php
 			if(isset($_SESSION['droit']))
@@ -12,7 +12,7 @@
 			<th>Nom</th>
 			<th>Prénom</th>
 			<th>Fonction</th>
-			<th>Photos</th>
+			<!-- <th>Photos</th> -->
 			<?php
 			if(isset($_SESSION['droit']))
 			{
@@ -34,12 +34,12 @@
 				echo "<td>".$unElu['NOMELU']."</td>";
 				echo "<td>".$unElu['PRENOMELU']."</td>";
 				echo "<td>".$unElu['FONCTIONELU']."</td>";
-				echo "<td>".$unElu['PHOTOELU']."</td>";
+				//echo "<td>".$unElu['PHOTOELU']."</td>";
 				if(isset($_SESSION['droit']))
 				{
 					?>
 					<td>
-						<a href="index.php?page=Controler&param="><i class='fas fa-trash-alt fa-2x'></i></a>
+						<a href="index.php?page=Controler&param=SupprElu&idElu=<?php echo $unElu['IDELU']?>"><i class='fas fa-trash-alt'></i></a>
 					</td>
 					<?php
 				}
@@ -51,12 +51,12 @@
 			if(isset($_SESSION['droit']))
 			{
 				?>
-				<td><a href="index.php?page=Controler&param=ajoutElu"><i class='fas fa-plus' fa-2x></i></a></td>
+				<td><a href="index.php?page=Controler&param=ajoutelu"><i class='fas fa-plus'></i></a></td>
 				<td></td>
 				<td></td>
 				<td></td>
 				<td></td>
-				<td></td>
+				<!-- <td></td> -->
 				<?php
 			}
 		?>

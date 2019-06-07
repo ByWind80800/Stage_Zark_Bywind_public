@@ -149,42 +149,6 @@ if(isset($_REQUEST['param']))
 
 		//INCLUDES POUR LES PAGES ADMIN
 
-		case 'ValidConnexion' :
-            {
-                //on vérifie tout d'abord si les champs sont bien remplis
-                if(!empty($_REQUEST['login'])&&!empty($_REQUEST['mdp']))
-                {
-                    $login = htmlspecialchars($_REQUEST['login']);
-                    $mdp = sha1($_REQUEST['mdp']);
-                    /*encrypt le mot de passe à comparé*/
-                    $laLigne=$Pdo->connexion(Conversion($login),Conversion($mdp));
-                    //on vérifie ensuite si un compte est bien retourné de la bdd (si $laLigne == 0 c'est qu'aucun compte Membre n'est retourné et qu'il y a forcément une erreur dans les logs)
-                    if($laLigne != 0) 
-                    {
-                        ///////// création des variales de session contenant les informations de l'utilisateur
-                        $_SESSION['nom'] = $laLigne['NOM'];
-                        $_SESSION['login'] = $laLigne['LOGIN'];
-                        $_SESSION['mdp'] = $laLigne['MDP'];
-                        $_SESSION['prenom'] = $laLigne['PRENOM'];
-                        $_SESSION['droit'] = $laLigne['DROIT'];
-                        $_SESSION['idUser']= $laLigne['IDUSERS'];
-                        ?>
-                        <script >
-                            document.location.href="index.php?page=Controler&param=Message&var=connexionVrai";
-                        </script>
-                        <?php
-                    }
-                    else
-                    {
-                        ?>
-                        <script >
-                            document.location.href="index.php?page=Controler&param=Message&var=connexionFaux";
-                        </script>
-                        <?php
-                    }
-                }
-            }
-
 ////////////////// PAGE ADMINISTRATEUR /////////////////
 
           	////// Formulaire d'ajout //////
@@ -202,9 +166,10 @@ if(isset($_REQUEST['param']))
 		}
 
 
-		case 'ajoutElu':
+		case 'ajoutelu':
 		{
-			include (dirname(__FILE__).'/../Vue/includes/Admin.AjoutElu.php');
+			include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutElu.php');
+            break;
 		}
 
 		case 'ajoutsociete':
@@ -263,6 +228,28 @@ if(isset($_REQUEST['param']))
                 break;
             }
 
+            case 'AjoutElu':
+                {
+                    if(empty($_POST['nom'])||empty($_POST['prenom'])||empty($_POST['fonction']))
+                    {
+                        ?>
+                        <script>
+                            document.location.href="index.php?page=Controler&param=Message&var=ErreurEmpty";
+                        </script>
+                        <?php
+                    }
+                    else
+                    {
+                        $Pdo->insertElu(Conversion($_POST['nom']), Conversion($_POST['prenom']), Conversion($_POST['fonction']));
+                        ?>
+                        <script>
+                            document.location.href="index.php?page=Controler&param=Message&var=AjoutElu";
+                        </script>
+                        <?php
+                    }
+                }
+                break;
+
             case 'AjoutSociete':
 		{
 			if(empty($_POST['nomentreprise'])||empty($_POST['nomdudirigeant']))
@@ -277,8 +264,8 @@ if(isset($_REQUEST['param']))
                 {
                 	$Pdo->insertSociete(Conversion($_POST['nomentreprise']),Conversion($_POST['nomdudirigeant']));
                     ?>
-                    <script >
-                        document.location.href="index.php?page=Controler&param=Message&var=AjoutSociete";
+                    <script>
+                        document.location.href="index.php?page=Controler&param=Message&var=Ajout";
                     </script>
                     <?php
                 }
@@ -340,7 +327,59 @@ if(isset($_REQUEST['param']))
                 break;
 		}
 
+        case 'SupprElu' :
+        {
+            $Pdo ->supprimerElu($_REQUEST['idElu']);
+            ?>
+            <script>
+                document.location.href="index.php?page=Controler&param=ConseilMunicipal";
+            </script>
+            <?php
+            break;
+        }
+
+
+
+
             //GESTION DES PAGES CONNEXION ET INSCRIPTION//
+
+        case 'ValidConnexion' :
+            {
+                //on vérifie tout d'abord si les champs sont bien remplis
+                if(!empty($_REQUEST['login'])&&!empty($_REQUEST['mdp']))
+                {
+                    $login = htmlspecialchars($_REQUEST['login']);
+                    $mdp = sha1($_REQUEST['mdp']);
+                    /*encrypt le mot de passe à comparé*/
+                    $laLigne=$Pdo->connexion(Conversion($login),Conversion($mdp));
+                    //on vérifie ensuite si un compte est bien retourné de la bdd (si $laLigne == 0 c'est qu'aucun compte Membre n'est retourné et qu'il y a forcément une erreur dans les logs)
+                    if($laLigne != 0) 
+                    {
+                        ///////// création des variales de session contenant les informations de l'utilisateur
+                        $_SESSION['nom'] = $laLigne['NOM'];
+                        $_SESSION['login'] = $laLigne['LOGIN'];
+                        $_SESSION['mdp'] = $laLigne['MDP'];
+                        $_SESSION['prenom'] = $laLigne['PRENOM'];
+                        $_SESSION['droit'] = $laLigne['DROIT'];
+                        $_SESSION['idUser']= $laLigne['IDUSERS'];
+                        ?>
+                        <script >
+                            document.location.href="index.php?page=Controler&param=Message&var=connexionVrai";
+                        </script>
+                        <?php
+                    }
+                    else
+                    {
+                        ?>
+                        <script >
+                            document.location.href="index.php?page=Controler&param=Message&var=connexionFaux";
+                        </script>
+                        <?php
+                    }
+                }
+            }
+
+
             case 'Inscription' :
             {
                 // test si les champs sont remplient
