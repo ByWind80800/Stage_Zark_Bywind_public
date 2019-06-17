@@ -10,6 +10,7 @@
 				{
 				    ?>
 				        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				        	<a href="index.php?page=Controler&param=SupprImg&idImg=<?php echo $uneImage['IDIMG']?>"><i class="fas fa-times"></i></a>
 				            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Agrandissement"
 				               data-image="Vue/img/<?php echo $uneImage['CHEMINIMG']?>?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 				               data-target="#image-gallery">

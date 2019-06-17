@@ -1,4 +1,5 @@
 <section>
+	<h2 class="soustitre">Les Entreprises à Freycenet-la-Tour</h2>
 	<table border="2" class="tableau">
 		<tr>
 			<?php

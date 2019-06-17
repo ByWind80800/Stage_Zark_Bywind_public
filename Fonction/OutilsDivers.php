@@ -98,7 +98,7 @@ function TranfertImage()
     $prenom_nomOrigine = $_FILES['Image']['name'];
     $elementsChemin = pathinfo($prenom_nomOrigine);
     $extensionFichier = $elementsChemin['extension'];
-    $extensionsAutorisees = array("jpeg", "jpg", "gif","png");
+    $extensionsAutorisees = array("jpeg", "jpg", "gif","png", "PNG");
     if (!(in_array($extensionFichier, $extensionsAutorisees)))
     {
         echo " <p style= 'background-color: black; color:white;'  >Le fichier n'a pas l'extension attendue</p>";
@@ -117,13 +117,13 @@ function TranfertImage()
                 " a été déplacé vers".$repertoireDestination.$prenom_nomDestination."</p>";
             return $prenom_nomDestination;
         }
-        else
-        {
-            $erreur= "<p style= 'background-color: black; color:white' >Le fichier n'a pas été uploadé (trop gros ?) ou ".
-                "Le déplacement du fichier temporaire a échoué".
-                " vérifiez l'existence du répertoire ".$repertoireDestination."</p>";
-            return $erreur;
-        }
+        // else
+        // {
+        //     $erreur= "<p style= 'background-color: black; color:white' >Le fichier n'a pas été uploadé (trop gros ?) ou ".
+        //         "Le déplacement du fichier temporaire a échoué".
+        //         " vérifiez l'existence du répertoire ".$repertoireDestination."</p>";
+        //     return $erreur;
+        // }
     }
 }
 

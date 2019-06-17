@@ -86,7 +86,7 @@
 		public function getListUsers()
 		{
 	        $req ="select * from  users ";
-	        echo $req;
+	        //echo $req;
 	        $var= Pdofreycenet::$monPdo->query($req);
 	        $lesLignes = $var->fetchAll();
 	        $nbLignes = count($lesLignes);
@@ -113,7 +113,7 @@
     	public function insertImage($idTypeMedia,$cheminIMG)
 	    {
 	        $req = "INSERT INTO image (IDIMG, IDTYPEMEDIA, CHEMINIMG) VALUES(null,1,'$cheminIMG')";
-	        echo $req;
+	        //echo $req;
 	        Pdofreycenet::$monPdo->exec($req);
 	    }
 	    public function insertSociete($nomentreprise,$nomdudirigeant,$corpsmetier)
@@ -161,6 +161,13 @@
 
 
     	//******************FONCTION DELETE******************//
+    	public function supprimerImage($id)
+    	{
+    		$req = "DELETE FROM IMAGE WHERE IDIMG=$id";
+    		//echo $req;
+    		Pdofreycenet::$monPdo->exec($req);
+    	}
+
     	public function supprimerActu($id)
     	{
         	$req = "DELETE from actualite where IDACTU=$id";
@@ -171,14 +178,14 @@
     	public function supprimerSociete($id)
     	{
         	$req = "DELETE from entreprises where IDENTREPRISES=$id";
-        	echo $req;
+        	//echo $req;
         	Pdofreycenet::$monPdo->exec($req);
     	}
 
     	public function supprimerElu($id)
     	{
     		$req = "DELETE FROM elucm where IDELU = $id";
-    		echo $req;
+    		//echo $req;
     		Pdofreycenet::$monPdo->exec($req);
     	}
 
@@ -195,7 +202,7 @@
 			public function connexion($login,$mdp)
 	    {
 	        $req = "SELECT * FROM users WHERE LOGIN='$login' AND MDP='$mdp'";
-	        echo $req;
+	        //echo $req;
 	        $var =Pdofreycenet::$monPdo->query($req);
 	        // recupére la ligne corepondant au paramétres rentrés
 	        $laLigne = $var->fetch();
@@ -207,7 +214,7 @@
 	    public function Inscription($nom,$prenom,$login,$mdp)
 	    {
 	        $req = "INSERT into USERS (IDUSERS, NOM, PRENOM, LOGIN, MDP, DROIT) VALUES(null,'$nom','$prenom','$login','$mdp',0/* par default le droit est défini à zero=utilisateur 1=admin*/)";
-	        echo $req;
+	        //echo $req;
 	        Pdofreycenet::$monPdo->exec($req);
 	    }
 }

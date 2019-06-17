@@ -406,6 +406,17 @@ if(isset($_REQUEST['param']))
                 break;
         }
 
+        case'SupprImg':
+        {
+            $Pdo->supprimerImage($_REQUEST['idImg']);
+            ?>
+            <script>
+                document.location.href="index.php?page=Controler&param=retrophotos";
+            </script>
+            <?php
+            break;
+        }
+
 
 
 

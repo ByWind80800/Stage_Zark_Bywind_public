@@ -189,10 +189,10 @@ INSERT INTO USERS
 VALUES (null, "Fargier", "Jean-Marc", "J-MFargier", "d033e22ae348aeb5660fc2140aec35850c4da997", 1);
 
 INSERT INTO IMAGE 
-VALUES (null, 1, "photos_paysage/les_Barthes/f0277034.jpg")
-(null, 1, "photos_paysage/les_sucs_autour_de_freycenet_la_tour/f0538666.jpg")
-(null, 1, "photos_paysage/photos_paysage_freycenet_la_tour/f0436074.jpg")
-(null, 1, "photos_paysage/église de la mairie.jpg")
+VALUES (null, 1, "photos_paysage/les_Barthes/f0277034.jpg"),
+(null, 1, "photos_paysage/les_sucs_autour_de_freycenet_la_tour/f0538666.jpg"),
+(null, 1, "photos_paysage/photos_paysage_freycenet_la_tour/f0436074.jpg"),
+(null, 1, "photos_paysage/église de la mairie.jpg");
 
 
 INSERT INTO entreprises
