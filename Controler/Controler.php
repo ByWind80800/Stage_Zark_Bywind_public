@@ -68,6 +68,12 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
+        case 'petitjournal' :
+        {
+            include(dirname(__FILE__).'/../Vue/includes/Commune/petitjournal.php');
+            break;
+        }
+
 		case 'EspaceNum':
 		{
 			include(dirname(__FILE__).'/../Vue/includes/Services/EspaceNum.php');

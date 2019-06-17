@@ -21,6 +21,7 @@
 						<li><a href="index.php?page=Controler&param=ConseilMunicipal">Conseil Municipal</a></li>
 						<li><a href="index.php?page=Controler&param=equipementMunicipaux">Espaces Communaux</a></li>
 						<li><a href="index.php?page=Controler&param=travaux">Travaux</a></li>
+						<li><a href="index.php?page=Controler&param=petitjournal">Le petit Journal</a></li>
 					</ul>
 				</li>
 
