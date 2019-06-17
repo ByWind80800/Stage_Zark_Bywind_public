@@ -19,7 +19,7 @@
 					<ul class="submenu">
 						<li><a href="index.php?page=Controler&param=Mairie">Mairie</a></li>
 						<li><a href="index.php?page=Controler&param=ConseilMunicipal">Conseil Municipal</a></li>
-						<li><a href="index.php?page=Controler&param=equipementMunicipaux">Equipement municipaux</a></li>
+						<li><a href="index.php?page=Controler&param=equipementMunicipaux">Espaces Communaux</a></li>
 						<li><a href="index.php?page=Controler&param=travaux">Travaux</a></li>
 					</ul>
 				</li>
