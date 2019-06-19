@@ -48,8 +48,7 @@
 			<li class="menu-decouverte">Découverte
 				<ul class="submenu">
 					<li><a href="index.php?page=Controler&param=histoire">Histoire</a></li>
-					<li><a href="index.php?page=Controler&param=patrimoine">Patrimoine</a></li>
-					<li><a href="index.php?page=Controler&param=Parcours">Parcours de Freycenet</a></li>
+					<!-- <li><a href="index.php?page=Controler&param=Parcours">Parcours de Freycenet</a></li> -->
 				</ul>
 			</li>
 			<li class="menu-connexion">

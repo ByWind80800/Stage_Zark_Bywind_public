@@ -135,11 +135,11 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
-		case 'Parcours':
-		{
-			include(dirname(__FILE__).'/../Vue/includes/Decouverte/Parcours.php');
-			break;
-		}
+		// case 'Parcours':
+		// {
+		// 	include(dirname(__FILE__).'/../Vue/includes/Decouverte/Parcours.php');
+		// 	break;
+		// }
 
 		case 'Message':
 		{
