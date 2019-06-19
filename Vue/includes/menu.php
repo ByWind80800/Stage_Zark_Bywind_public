@@ -20,7 +20,7 @@
 						<li><a href="index.php?page=Controler&param=Mairie">Mairie</a></li>
 						<li><a href="index.php?page=Controler&param=ConseilMunicipal">Conseil Municipal</a></li>
 						<li><a href="index.php?page=Controler&param=equipementMunicipaux">Espaces Communaux</a></li>
-						<li><a href="index.php?page=Controler&param=travaux">Travaux</a></li>
+						<!-- <li><a href="index.php?page=Controler&param=travaux">Travaux</a></li> -->
 						<li><a href="index.php?page=Controler&param=petitjournal">Le petit Journal</a></li>
 					</ul>
 				</li>
@@ -29,8 +29,8 @@
 			<li class="menu-services">Services
 					<ul class="submenu">
 						<li><a href="index.php?page=Controler&param=EspaceNum">Espaces numérique</a></li>
-						<li><a href="index.php?page=Controler&param=RamassOm">Ramassage des ordures ménagères</a></li>
-						<li><a href="index.php?page=Controler&param=Eau">Eau potable</a></li>
+						<!-- <li><a href="index.php?page=Controler&param=RamassOm">Ramassage des ordures ménagères</a></li>
+						<li><a href="index.php?page=Controler&param=Eau">Eau potable</a></li> -->
 						<li><a href="index.php?page=Controler&param=SalleCommunale">Salle communale</a></li>
 						<li><a href="index.php?page=Controler&param=Societe">Entreprises et société</a></li>
 					</ul>

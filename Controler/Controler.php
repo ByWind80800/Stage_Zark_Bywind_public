@@ -62,11 +62,11 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
-		case 'travaux':
-		{
-			include(dirname(__FILE__).'/../Vue/includes/Commune/travaux.php');
-			break;
-		}
+		// case 'travaux':
+		// {
+		// 	include(dirname(__FILE__).'/../Vue/includes/Commune/travaux.php');
+		// 	break;
+		// }
 
         case 'petitjournal' :
         {
@@ -80,17 +80,17 @@ if(isset($_REQUEST['param']))
 			break;
 		}
 
-		case 'RamassOm':
-		{
-			include(dirname(__FILE__).'/../Vue/includes/Services/RamassOm.php');
-			break;
-		}
+		// case 'RamassOm':
+		// {
+		// 	include(dirname(__FILE__).'/../Vue/includes/Services/RamassOm.php');
+		// 	break;
+		// }
 
-		case 'Eau':
-		{
-			include(dirname(__FILE__).'/../Vue/includes/Services/Eau.php');
-			break;
-		}
+		// case 'Eau':
+		// {
+		// 	include(dirname(__FILE__).'/../Vue/includes/Services/Eau.php');
+		// 	break;
+		// }
 
 		case 'SalleCommunale':
 		{
