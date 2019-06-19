@@ -1,5 +1,5 @@
 <section>
-	<h2 class="soustitre">Les Entreprises à Freycenet-la-Tour</h2>
+	<h2 class="soustitre">Les Sociétés à Freycenet-la-Tour</h2>
 	<table border="2" class="tableau">
 		<tr>
 			<?php
@@ -11,9 +11,9 @@
 				}
 				?>
 
-			<th>Nom Entreprise</th>
+			<th>Nom Société</th>
 			<th>Nom du gérant</th>
-			<th>Corps de métier de l'entreprise</th>
+			<th>Corps de métier</th>
 		</tr>
 		<tr>
 		<?php
