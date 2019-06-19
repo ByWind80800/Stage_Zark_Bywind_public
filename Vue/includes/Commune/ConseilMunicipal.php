@@ -11,7 +11,7 @@
 			?>
 			<th>Nom</th>
 			<th>Prénom</th>
-			<th>Fonction</th>
+			<th>Profession</th>
 			<!-- <th>Photos</th> -->
 			<?php
 			if(isset($_SESSION['droit']))
