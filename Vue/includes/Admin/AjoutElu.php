@@ -17,8 +17,8 @@
 
                 <!-- Label pour récupérer la fonction de l'élu -->
                 <div class="form-group">
-                    <label class="font3">Fonction</label>
-                    <input type="text" class="form-control"  placeholder="Fonction..." name="fonction">
+                    <label class="font3">Profession</label>
+                    <input type="text" class="form-control"  placeholder="Profession..." name="fonction">
                 </div>
 
                 <!-- Label pour ajouter la photo de l'élu -->
