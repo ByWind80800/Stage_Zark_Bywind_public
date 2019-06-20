@@ -103,6 +103,14 @@
 			return $lesEvents;
 		}
 
+		public function getListPtitJournal()
+		{
+			$req = "SELECT * FROM petitjournal";
+			$res = Pdofreycenet::$monPdo->query($req);
+			$lesJournaux = $res->fetchAll();
+			return $lesJournaux;
+		}
+
 	    //***************FONCTION INSERT************//	
 	    public function insertActu($titreActu,$texteActu)
     	{
