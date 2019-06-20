@@ -70,6 +70,7 @@ if(isset($_REQUEST['param']))
 
         case 'petitjournal' :
         {
+            $lesJournaux = $Pdo->getListPtitJournal();
             include(dirname(__FILE__).'/../Vue/includes/Commune/petitjournal.php');
             break;
         }
