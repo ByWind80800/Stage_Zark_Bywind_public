@@ -272,7 +272,7 @@ if(isset($_REQUEST['param']))
 
             case 'AjoutSociete':
 		{
-			if(empty($_POST['nomentreprise'])||empty($_POST['nomdudirigeant']))
+			if(empty($_POST['nomentreprise'])||empty($_POST['nomgerant']))
                 {
                     ?>
                     <script>
@@ -282,10 +282,10 @@ if(isset($_REQUEST['param']))
                 }
                 else
                 {
-                	$Pdo->insertSociete(Conversion($_POST['nomentreprise']),Conversion($_POST['nomdudirigeant']),Conversion($_POST['corpsmetier']));
+                	$Pdo->insertSociete(Conversion($_POST['nomentreprise']),Conversion($_POST['nomgerant']),Conversion($_POST['corpsmetier']));
                     ?>
                     <script>
-                        document.location.href="index.php?page=Controler&param=Message&var=Ajout";
+                        document.location.href="index.php?page=Controler&param=Message&var=AjoutSociete";
                     </script>
                     <?php
                 }
