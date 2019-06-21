@@ -51,7 +51,7 @@
 			if(isset($_SESSION['droit']))
 			{
 				?>
-				<td><a href="index.php?page=Controler&param=ajoutelu"><i class='fas fa-plus'></i></a></td>
+				<td><a href="index.php?page=Controler&param=ajoutelu"><i class='fas fa-plus'>Ajoute un élu</i></a></td>
 				<td></td>
 				<td></td>
 				<td></td>

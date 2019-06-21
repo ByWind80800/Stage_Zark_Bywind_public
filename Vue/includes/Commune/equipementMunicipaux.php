@@ -8,7 +8,7 @@
 					<img src="Vue/img/photos_paysage/Mairie.jpg" width="100%" height="100%">
 				</div>
 				<div class="col-md-6">
-					<div class="fondtext">
+					<div class="fondtext2">
 						<p class="colorPre">La Mairie de Freycenet-la-Tour dépend de la préfecture du département de la Haute-Loire. Le Conseil Général de la Mairie de Freycenet-la-Tour est le Conseil Départemental de la Haute-Loire, faisant parti de la région administrative Auvergne-Rhône-Alpes</p>
 					</div>
 				</div>

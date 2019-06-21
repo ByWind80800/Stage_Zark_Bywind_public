@@ -1,6 +1,6 @@
 /*Style du Body et du titre*/
 body{
-	background-color: darkgrey;
+	background-color: lightblue;
 }
 h1{
 	text-align: center;
@@ -11,7 +11,7 @@ h1{
 nav{
 	width: 100%;
 	height: 72px;
-	background-color:#858585;
+	background-color:darkgrey;
 	
 } 
 
@@ -68,7 +68,7 @@ nav ul li:hover a{
 .submenu li a{
 	padding: 15px 30px;
 	font-size: 13px;
-	color: red;
+	color: #3E215A;
 	width: 270px;
 }
  .submenu li:hover a{
@@ -86,25 +86,25 @@ nav ul li:hover a{
 	text-decoration: none;
 }
 .menu-accueil .submenu{
-	background-color: #858585;
+	background-color: darkgrey;
 }
 .menu-actualite .submenu{
-	background-color: #858585;
+	background-color: darkgrey;
 }
 .menu-commune .submenu{
-	background-color: #858585;
+	background-color: darkgrey;
 }
 .menu-services .submenu{
-	background-color: #858585;
+	background-color: darkgrey;
 }
 .menu-association .submenu{
-	background-color: #858585;
+	background-color: darkgrey;
 }
 .menu-decouverte .submenu{
-	background-color: #858585;
+	background-color: darkgrey;
 }
 .connexion .submenu{
-	background-color: #858585;
+	background-color: darkgrey;
 }
 
 /*Style des li dans les liste déroulante*/
@@ -133,45 +133,45 @@ nav ul li:hover a{
 
 .menu-accueil{
 	border-top: 5px;
- 	background-color: #858585;
+ 	background-color: darkgrey;
  	color: #3E215A;
 }
 .menu-actualite{
  	border-top: 5px;
- 	background-color: #858585;
+ 	background-color: darkgrey;
  	color: #3E215A;
  	padding: 20px 30px;
  }
 
 .menu-commune{
  	border-top: 5px;
- 	background-color: #858585;
+ 	background-color: darkgrey;
  	color: #3E215A;
  	padding: 20px 30px;
  }
 
 .menu-services{
  	border-top: 5px;
- 	background-color: #858585;
+ 	background-color: darkgrey;
  	color: #3E215A;
  	padding: 20px 30px;
  }
 
 .menu-association{
  	border-top: 5px;
- 	background-color: #858585;
+ 	background-color: darkgrey;
  	color: #3E215A;
  	padding: 20px 30px;
  }
 .menu-decouverte{
  	border-top: 5px;
- 	background-color: #858585;
+ 	background-color: darkgrey;
  	color: #3E215A;
  	padding: 20px 30px;
  }
  .connexion{
  	border-top: 5px;
- 	background-color: #858585;
+ 	background-color: darkgrey;
  	color: #3E215A;
  	padding: 20px 30px
  }
@@ -254,8 +254,8 @@ table th{
 
 /*Style des Titre*/
 .soustitre{
-	background-color:white;
-	color: #3E215A; 
+	background-color: purple;
+	color: white; 
 	text-align: center;
 	padding: 5px 5px;
 	border-top: 3px solid #3E215A;
@@ -263,8 +263,8 @@ table th{
 }
 
 .soustitre2{
-	background-color: white;
-	color: #3E215A;
+	background-color: purple;
+	color: white;
 	text-align: center;
 	padding: 3px 3px;
 	border: 2px solid #3E215A;
@@ -278,18 +278,28 @@ table th{
 	border-top: 3px solid #12AC0B;
 	border-bottom: 3px solid #12AC0B;
 }
+
+.titrepied{
+	font-family: georgia;
+}
 /*FIN STYLE DES TITRE*/
 
 
 /*STYLE DES BLOC DE TEXTE*/
 .fondtext{
-	margin-top: 25%;
 	background-color: #4A4A4A;
 	border : solid #3E215A;
 	margin-bottom: 10px;
 
 }
 
+.fondtext2{
+	margin-top: 25%;
+	background-color: #4A4A4A;
+	border : solid #3E215A;
+	margin-bottom: 10px;
+
+}
 .colorPre{
 	color: white;
 }
@@ -298,12 +308,12 @@ table th{
 /*STYLE DU PIED DE PAGE*/
 footer{
 	border-top: 3px solid #3E215A;
-	border-bottom: 3px solid #3E215A;
-	background-color: #3E215A;
-	color: #A1A1A1;
+	/*border-bottom: 3px solid #3E215A;*/
+	background-color: purple;
+	color: white;
 }
 .formulaire{
-	color: #A1A1A1;
+	color: white;
 }
 .copyright{
 	background-color: black;

@@ -42,6 +42,8 @@
 						<li><a href="index.php?page=Controler&param=comiteFete">Comité des fêtes</a></li>
 						<li><a href="index.php?page=Controler&param=Chasse">association de la chasse</a></li>
 						<li><a href="index.php?page=Controler&param=Petanque">association de la pétanque</a></li>
+						<li><a href="">Club du troisième âge</a></li>
+						<li><a href="">Bibliothèque</a></li>
 					</ul>
 				</li>
 

@@ -9,10 +9,10 @@
 			<div class="row">
 				<div class="col-md-12" align="center">
 					<div class="fondtext">
-						<pre class="colorPre">Nombre d'habitants : 99</pre>
-						<pre class="colorPre">Superficie : 7.93 Km² </pre>
-						<pre class="colorPre">Altitude : entre 964m et 1244m</pre>
-						<pre class="colorPre">Coordonnées géographiques : 44.09389, 4.05972</pre>
+						<p class="colorPre">Nombre d'habitants : 99</p>
+						<p class="colorPre">Superficie : 7.93 Km² </p>
+						<p class="colorPre">Altitude : entre 964m et 1244m</p>
+						<p class="colorPre">Coordonnées géographiques : 44.09389, 4.05972</p>
 					</div>
 				</div>
 			</div>
@@ -24,20 +24,20 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="fondtext">
-						<pre class="colorPre">Alleyrac</pre>					
-						<pre class="colorPre">Lantriac</pre>
-						<pre class="colorPre">Le Monastier sur Gazeille</pre>
-						<pre class="colorPre">Montusclat</pre>
-						<pre class="colorPre">Présailles</pre>
+						<p class="colorPre"><font size="4">Alleyrac</font></p>					
+						<p class="colorPre"><font size="4">Lantriac</font></p>
+						<p class="colorPre"><font size="4">Le Monastier sur Gazeille</font></p>
+						<p class="colorPre"><font size="4">Montusclat</font></p>
+						<p class="colorPre"><font size="4">Présailles</font></p>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="fondtext">
-						<pre class="colorPre">Freycenet la Cuche</pre>
-						<pre class="colorPre">Laussonne</pre>
-						<pre class="colorPre">Les Estables</pre>
-						<pre class="colorPre">Moudeyres</pre>
-						<pre class="colorPre">Saint-Front</pre>
+						<p class="colorPre">Freycenet la Cuche</p>
+						<p class="colorPre">Laussonne</p>
+						<p class="colorPre">Les Estables</p>
+						<p class="colorPre">Moudeyres</p>
+						<p class="colorPre">Saint-Front</p>
 					</div>
 				</div>
 			</div>
