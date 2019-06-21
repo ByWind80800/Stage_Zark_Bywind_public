@@ -192,6 +192,12 @@ if(isset($_REQUEST['param']))
             break;
         }
 
+        case 'ajoutjournal':
+        {
+            include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutJournal.php');
+            break;
+        }
+
 
 
 //////////////////// ACTION AJOUTER ////////////////////
@@ -308,6 +314,30 @@ if(isset($_REQUEST['param']))
                 break;  
         }
 
+        case 'AjoutJournal':
+        {
+            if(!empty($_FILES['PDF']['name']))
+                {
+                    $var=TranfertPdf();
+                    $Pdo->insertJournal(1, $var);
+                    //$Pdo->ajoutA("");
+                    ?>
+                    <script >
+                        document.location.href="index.php?page=Controler&param=Message&var=AjoutMedia";
+                    </script>
+                    <?php
+                }
+                else
+                {
+                    ?>
+                    <script >
+                        document.location.href="index.php?page=Controler&param=Message&var=ErreurEmpty";
+                    </script>
+                    <?php
+                }
+                break;
+        }
+
 
 //////////////////// FORMULAIRE DE MODIFICATION ////////////////////
 
@@ -419,6 +449,17 @@ if(isset($_REQUEST['param']))
             ?>
             <script>
                 document.location.href="index.php?page=Controler&param=retrophotos";
+            </script>
+            <?php
+            break;
+        }
+
+        case 'SupprJournal':
+        {
+            $Pdo->supprimerJournal($_REQUEST['IdJournal']);
+            ?>
+            <script>
+                document.location.href="index.php?page=Controler&param=petitjournal";
             </script>
             <?php
             break;

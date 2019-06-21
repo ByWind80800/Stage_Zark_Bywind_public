@@ -145,6 +145,14 @@
         	Pdofreycenet::$monPdo->exec($req);
     	}
 
+    	public function insertJournal($cheminJournal)
+    	{
+    		$req="INSERT INTO petitjournal
+    		VALUES (null, $cheminJournal)";
+    		//echo $req;
+    		Pdofreycenet::$monPdo->exec($req);
+    	}
+
     	//***************FONCTION UPDATE***************//
     	public function modifActu($titreActu,$texteActu,$id)
     	{
@@ -202,6 +210,13 @@
         	$req = "DELETE from evenement where IDEVENT=$id";
         	//echo $req;
         	Pdofreycenet::$monPdo->exec($req);
+    	}
+
+    	public function supprimerJournal($id)
+    	{
+    		$req="DELETE from petitjournal where IdJournal=$id";
+    		//echo $req;
+    		Pdofreycenet::$monPdo->exec($req);
     	}
 
 
