@@ -124,9 +124,9 @@
 	        //echo $req;
 	        Pdofreycenet::$monPdo->exec($req);
 	    }
-	    public function insertSociete($nomentreprise,$nomgerant,$corpsmetier)
+	    public function insertSociete($nomentreprise,$nomgerant,$corpsmetier,$ntelephone)
     	{
-        	$req = "INSERT INTO entreprises (IDENTREPRISES, NOMENTREPRISE, NOMGERANT, CORPSMETIER) VALUES(null,'$nomentreprise','$nomgerant','$corpsmetier')";
+        	$req = "INSERT INTO entreprises (IDENTREPRISES, NOMENTREPRISE, NOMGERANT, CORPSMETIER, TELEPHONE) VALUES(null,'$nomentreprise','$nomgerant','$corpsmetier','$ntelephone')";
         	//echo $req;
         	Pdofreycenet::$monPdo->exec($req);
     	}
@@ -161,9 +161,9 @@
         	Pdofreycenet::$monPdo->exec($req);
     	}
 
-    	public function modifSociete($nomentreprise,$nomgerant,$corpsmetier,$id)
+    	public function modifSociete($nomentreprise,$nomgerant,$corpsmetier,$ntelephone,$id)
     	{
-        	$req = "UPDATE entreprises set NOMENTREPRISE ='$nomentreprise' ,NOMGERANT ='$nomgerant' ,CORPSMETIER ='$corpsmetier' where IDENTREPRISES=$id";
+        	$req = "UPDATE entreprises set NOMENTREPRISE ='$nomentreprise' ,NOMGERANT ='$nomgerant' ,CORPSMETIER ='$corpsmetier' ,TELEPHONE ='$ntelephone' where IDENTREPRISES=$id";
         	//echo $req;
         	Pdofreycenet::$monPdo->exec($req);
     	}

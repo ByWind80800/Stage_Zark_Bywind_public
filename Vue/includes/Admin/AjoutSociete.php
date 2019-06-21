@@ -15,6 +15,10 @@
                     <label class="font3">Corps de métier</label>
                     <textarea type="text" class="form-control"  placeholder="Corps de métier..." name="corpsmetier" rows="4"></textarea>
                 </div>
+                <div class="form-group">
+                    <label class="font3">N° Téléphone</label>
+                    <textarea type="text" class="form-control"  placeholder="N° de Téléphone..." name="ntelephone" rows="4"></textarea>
+                </div>
                 <button type="submit" class="btn btn-outline-secondary marginAuto w-100" value="connexion">Ajouter</button>
             </form>
         </div>
