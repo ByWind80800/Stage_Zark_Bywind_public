@@ -32,6 +32,11 @@
                          <input type="text" class="form-control" name="corpsmetier"
                                 value="<?php echo $uneSociete['CORPSMETIER'] ?>">
                      </div>
+                     <div class="form-group">
+                         <label>N° de Téléphone</label>
+                         <input type="text" class="form-control" name="ntelephone"
+                                value="<?php echo $uneSociete['TELEPHONE'] ?>">
+                     </div>
                      <input type="hidden" value="<?php echo $_REQUEST['idEntreprises'] ?>" name="modifId">
                      <button type="submit" class="btn btn-outline-secondary marginAuto w-100">
                          Modifier

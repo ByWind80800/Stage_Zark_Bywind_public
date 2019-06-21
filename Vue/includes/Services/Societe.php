@@ -14,6 +14,7 @@
 			<th>Nom Société</th>
 			<th>Nom du gérant</th>
 			<th>Corps de métier</th>
+			<th>N° Téléphone</th>
 		</tr>
 		<tr>
 		<?php
@@ -26,6 +27,7 @@
 						</i>
 					</a>
 				</td>
+				<td></td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -47,6 +49,7 @@
 					echo "<td>".$uneSociete['NOMENTREPRISE']."</td>";
 					echo "<td>".$uneSociete['NOMGERANT']."</td>";
 					echo "<td>".$uneSociete['CORPSMETIER']."</td>";
+					echo "<td>".$uneSociete['TELEPHONE']."</td>";
 					if(isset($_SESSION['droit']))
 					{
 						?>
