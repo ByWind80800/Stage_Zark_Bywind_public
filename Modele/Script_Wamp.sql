@@ -92,15 +92,23 @@ CREATE TABLE IF NOT EXISTS `entreprises` (
   `NOMENTREPRISE` char(70) DEFAULT NULL,
   `NOMGERANT` char(30) DEFAULT NULL,
   `CORPSMETIER` char(50) DEFAULT NULL,
+  `TELEPHONE` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`IDENTREPRISES`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `entreprises`
 --
 
-INSERT INTO `entreprises` (`IDENTREPRISES`, `NOMENTREPRISE`, `NOMGERANT`, `CORPSMETIER`) VALUES
-(1, 'entreprises 1', 'gérant 1', 'Corps métier 1');
+INSERT INTO `entreprises` (`IDENTREPRISES`, `NOMENTREPRISE`, `NOMGERANT`, `CORPSMETIER`, `TELEPHONE`) VALUES
+(1, 'Salaison Nicolas Frères', 'NICOLAS BERNARD JOSPEH MARIE', 'Charcuteries', '04 71 03 80 82'),
+(2, 'Brassserie artisanale Ouroboros', 'Guillaume Olivier GUFFLET', 'Brassserie', '09 54 84 47 49'),
+(3, 'Auberge de la Tour', 'AYDOGAN TUNCAY', 'Bar-Restaurant-Épicerie', '04 71 03 94 34'),
+(4, 'Gîte des Barthes', 'Karen et Francois Bertrand', 'Logement', '06 71 69 01 65'),
+(5, 'Auberge de la Tour', 'Toun Aydogan', 'Logement', '04 71 03 94 34'),
+(6, 'Gîte du Couderc', 'Mr et Mme Elie NICOLAS-ROMIEUX', 'Logement', '04 44 43 93 12'),
+(7, 'Mairie de Freycenet-la-Tour', 'Jean-Marc FARGIER', 'Mairie', '04 71 03 83 55'),
+(8, 'Pharmacie Le Monastier sur Gazeille', 'Aurore ROUSSON', 'Pharmacie', '04 71 03 93 08');
 
 -- --------------------------------------------------------
 
