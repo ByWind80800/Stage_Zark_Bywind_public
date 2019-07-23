@@ -6,6 +6,19 @@ h1{
 	text-align: center;
 }
 
+/*Style menu*/
+	/*Style d'écriture navbar*/
+	/*.Ubuntu {
+		font-family: 'Ubuntu', sans-serif;
+		}
+
+	.Varela {
+		font-family: 'Varela Round', sans-serif;
+		}*/
+	.Expletus{
+		font-family: 'Expletus Sans', cursive;
+		}
+	/*Style d'écriture navbar*/
 
 /*Style de la barre de navigation*/
 nav{
@@ -52,19 +65,6 @@ nav li:hover .submenu{
 	padding: 0px;
 	z-index: 100000;
 }
-
-/*Font du site*/
-.Ubuntu {
-	font-family: 'Ubuntu', sans-serif;
-	}
-
-.Varela {
-	font-family: 'Varela Round', sans-serif;
-	}
-.Expletus{
-	font-family: 'Expletus Sans', cursive;
-	}
-/*Fin font du site*/
 
 /*Style des liste déroulante*/
 .submenu{
