@@ -1,11 +1,11 @@
 	<!-- Barre de navigation -->
-	<nav>
+	<nav class="Expletus">
 		<ul>
 			<li class="menu-accueil">
 				<a href="index.php?page=Controler&param=Accueil"><img src="Vue/img/lauraPhotoshop/home.png" height="30"> Accueil</a>
 			</li>
 
-			<li class="menu-actualite">Actualité
+			<li class="menu-actualite">Actualités
 				<ul class="submenu">
 					<li><a href="index.php?page=Controler&param=nouvelles">Nouvelles</a></li>
 					<li><a href="index.php?page=Controler&param=agenda">Agenda</a></li>
@@ -36,17 +36,17 @@
 				</li>
 
 
-			<li class="menu-association">Association
+			<li class="menu-association">Associations
 					<ul class="submenu">
 						<li><a href="index.php?page=Controler&param=comiteFete">Comité des fêtes</a></li>
-						<li><a href="index.php?page=Controler&param=Chasse">association de la chasse</a></li>
-						<li><a href="index.php?page=Controler&param=Petanque">association de la pétanque</a></li>
+						<li><a href="index.php?page=Controler&param=Chasse">Association de la chasse</a></li>
+						<li><a href="index.php?page=Controler&param=Petanque">Association de la pétanque</a></li>
 						<li><a href="">Club du troisième âge</a></li>
 						<li><a href="">Bibliothèque</a></li>
 					</ul>
 				</li>
 
-			<li class="menu-decouverte">Découverte
+			<li class="menu-decouverte">Découvertes
 				<ul class="submenu">
 					<li><a href="index.php?page=Controler&param=histoire">Histoire</a></li>
 					<!-- <li><a href="index.php?page=Controler&param=Parcours">Parcours de Freycenet</a></li> -->

@@ -53,6 +53,19 @@ nav li:hover .submenu{
 	z-index: 100000;
 }
 
+/*Font du site*/
+.Ubuntu {
+	font-family: 'Ubuntu', sans-serif;
+	}
+
+.Varela {
+	font-family: 'Varela Round', sans-serif;
+	}
+.Expletus{
+	font-family: 'Expletus Sans', cursive;
+	}
+/*Fin font du site*/
+
 /*Style des liste déroulante*/
 .submenu{
 	display: none;
@@ -67,6 +80,7 @@ nav li:hover .submenu{
 	font-size: 13px;
 	color: #3E215A;
 	width: 270px;
+	font-size: 17px;
 }
  .submenu li:hover a{
  	color: #EEE;
@@ -135,6 +149,7 @@ nav li:hover .submenu{
  	background-color: darkgrey;
  	color: #3E215A;
  	padding: 20px 30px;
+ 	font-size: 19px;
  }
 
 .menu-commune{
@@ -142,6 +157,7 @@ nav li:hover .submenu{
  	background-color: darkgrey;
  	color: #3E215A;
  	padding: 20px 30px;
+ 	font-size: 19px;
  }
 
 .menu-services{
@@ -149,6 +165,7 @@ nav li:hover .submenu{
  	background-color: darkgrey;
  	color: #3E215A;
  	padding: 20px 30px;
+ 	font-size: 19px;
  }
 
 .menu-association{
@@ -156,12 +173,14 @@ nav li:hover .submenu{
  	background-color: darkgrey;
  	color: #3E215A;
  	padding: 20px 30px;
+ 	font-size: 19px;
  }
 .menu-decouverte{
  	border-top: 5px solid darkgrey;
  	background-color: darkgrey;
  	color: #3E215A;
  	padding: 20px 30px;
+ 	font-size: 19px;
  }
 /* .connexion{
  	border-top: 5px solid darkgrey;
