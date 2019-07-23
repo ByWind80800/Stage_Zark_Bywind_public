@@ -1,9 +1,8 @@
-<section>
 	<!-- Barre de navigation -->
 	<nav>
 		<ul>
 			<li class="menu-accueil">
-				<a href="index.php?page=Controler&param=Accueil">Accueil</a>
+				<a href="index.php?page=Controler&param=Accueil"><img src="Vue/img/lauraPhotoshop/home.png" height="30"> Accueil</a>
 			</li>
 
 			<li class="menu-actualite">Actualité
@@ -53,7 +52,7 @@
 					<!-- <li><a href="index.php?page=Controler&param=Parcours">Parcours de Freycenet</a></li> -->
 				</ul>
 			</li>
-			<li class="menu-connexion">
+			<!-- <li class="menu-connexion">
 				<?php
             if(isset($_SESSION['droit']))
             {
@@ -66,9 +65,8 @@
 				<?php
 			}
 			?>
-			</li>
+			</li> -->	
 			<img src="Vue/img/logo.png" align="right" class="logo">					
 		</ul>
 	</nav>
 <br/>
-</section>

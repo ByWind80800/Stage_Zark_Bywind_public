@@ -10,6 +10,7 @@
 	<head>
 	<!-- Entête de page -->
 	<header>
-		<h1><img src="Vue/img/panneau.jpg" width="45%" height="45%"></h1>
+		<!-- <h1><img src="Vue/img/panneau.jpg" width="45%" height="45%"></h1> -->
+		<h1><img src="Vue/img/lauraPhotoshop/titre1080.png" width="25%" height="25%"></h1>
 	</header>
 	<body>
