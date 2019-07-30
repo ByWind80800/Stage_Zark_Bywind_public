@@ -1,8 +1,11 @@
 <section>
 	<h2 class="soustitre">Bienvenue sur le site de Freycenet la tour</h2>
+<<<<<<< HEAD
 	<div  class="imgAccueil" align="center">
 		<img src="Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f1416234.jpg" width="95%" height="95%">
 	</div>
+=======
+>>>>>>> parent of 130a7ba... modif accueil
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 	<div class="carousel-inner">
