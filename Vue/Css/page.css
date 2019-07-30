@@ -80,6 +80,7 @@ nav li:hover .submenu{
 	font-size: 13px;
 	color: #632685;
 	border: 2px solid #632685;
+	border-radius: 5px;
 	width: 270px;
 	margin: 3px;
 	font-size: 17px;
