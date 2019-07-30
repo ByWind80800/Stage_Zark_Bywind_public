@@ -77,14 +77,9 @@ nav li:hover .submenu{
 
 .submenu li a{
 	padding: 15px 30px;
-<<<<<<< HEAD
 	color: #632685;
 	border: 2px solid #632685;
 	border-radius: 5px;
-=======
-	font-size: 13px;
-	color: #3E215A;
->>>>>>> parent of a9e762e... modif menu
 	width: 270px;
 	font-size: 17px;
 }
