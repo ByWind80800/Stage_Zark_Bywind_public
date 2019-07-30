@@ -2,6 +2,7 @@
 	<h2 class="soustitre">Bienvenue sur le site de Freycenet la tour</h2>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<div  class="imgAccueil" align="center">
 		<img src="Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f1416234.jpg" width="95%" height="95%">
 	</div>
@@ -32,6 +33,11 @@
   	</a>
 </div>
 
+=======
+	<div  class="imgAccueil" align="center">
+		<img src="Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f1416234.jpg" width="95%" height="95%">
+	</div>
+>>>>>>> parent of a9e762e... modif menu
 	<div class="container">
 		<div align="center">
 			<h4 class="soustitre2">Données sur Freycenet la tour</h4>
