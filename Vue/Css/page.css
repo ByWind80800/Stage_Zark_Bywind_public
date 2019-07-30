@@ -1,6 +1,6 @@
 /*Style du Body et du titre*/
 body{
-	background-color: lightblue;
+	background-color: #d0ebfe;
 }
 h1{
 	text-align: center;
@@ -24,7 +24,7 @@ h1{
 nav{
 	width: 100%;
 	height: 73px;
-	background-color:darkgrey;
+	background-color:#85bbff;
 	
 } 
 
@@ -72,7 +72,9 @@ nav li:hover .submenu{
 }
 
 .submenu li{
-	border-bottom : 1px solid #CCC;
+	border: 2px solid #d0ebfe;
+	border-radius: 5px;
+	background-color: #85bbff; 
 }
 
 .submenu li a{
@@ -92,35 +94,16 @@ nav li:hover .submenu{
 .menu-accueil a{
 	color: #3E215A;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 25px;
 }
 .menu-accueil{
 	text-decoration: none;
-	background-color: darkgrey;
-	border-top: 5px solid darkgrey;
-	border-bottom: 5px solid darkgrey;
-	border-right: 5px solid darkgrey;
+	background-color: #85bbff;
+	border-top: 5px solid #3E215A;
+	border-bottom: 5px solid #3E215A;
+	border-right: 5px solid #3E215A;
 	border-radius: 30px;
 }
-.menu-actualite .submenu{
-	background-color: darkgrey;
-}
-.menu-commune .submenu{
-	background-color: darkgrey;
-}
-.menu-services .submenu{
-	background-color: darkgrey;
-}
-.menu-association .submenu{
-	background-color: darkgrey;
-}
-.menu-decouverte .submenu{
-	background-color: darkgrey;
-}
-/*.connexion .submenu{
-	background-color: darkgrey;
-}
-*/
 /*Style des li dans les liste déroulante*/
 .menu-actualite .submenu li:hover{
 	background-color:#3E215A; 
@@ -137,44 +120,40 @@ nav li:hover .submenu{
 .menu-decouverte .submenu li:hover{
 	background-color:#3E215A; 
 }
-/*.connexion .submenu li:hover{
-	background-color: #3E215A;
-}*/
-
 .menu-actualite{
- 	border-top: 5px solid darkgrey;
- 	background-color: darkgrey;
+ 	border-top: 5px solid #85bbff;
+ 	background-color: #85bbff;
  	color: #3E215A;
  	padding: 20px 30px;
  	font-size: 19px;
  }
 
 .menu-commune{
- 	border-top: 5px solid darkgrey;
- 	background-color: darkgrey;
+ 	border-top: 5px solid #85bbff;
+ 	background-color: #85bbff;
  	color: #3E215A;
  	padding: 20px 30px;
  	font-size: 19px;
  }
 
 .menu-services{
- 	border-top: 5px solid darkgrey;
- 	background-color: darkgrey;
+ 	border-top: 5px solid #85bbff;
+ 	background-color: #85bbff;
  	color: #3E215A;
  	padding: 20px 30px;
  	font-size: 19px;
  }
 
 .menu-association{
- 	border-top: 5px solid darkgrey;
- 	background-color: darkgrey;
+ 	border-top: 5px solid #85bbff;
+ 	background-color: #85bbff;
  	color: #3E215A;
  	padding: 20px 30px;
  	font-size: 19px;
  }
 .menu-decouverte{
- 	border-top: 5px solid darkgrey;
- 	background-color: darkgrey;
+ 	border-top: 5px solid #85bbff;
+ 	background-color: #85bbff;
  	color: #3E215A;
  	padding: 20px 30px;
  	font-size: 19px;
@@ -193,46 +172,38 @@ nav li:hover .submenu{
 	border-top: 5px solid #3E215A;
 	border-bottom: 5px solid #3E215A;
 	border-right: 5px solid #3E215A;
- 	background-color: darkgrey;
+ 	background-color: #d0ebfe;
 }
 
 .menu-actualite:hover{
  	border-top: 5px solid #3E215A;
- 	background-color: darkgrey;
+ 	background-color: #d0ebfe;
  }
 
 .menu-commune:hover{
  	border-top: 5px solid #3E215A;
- 	background-color: darkgrey;
+ 	background-color: #d0ebfe;
  	padding: 20px 30px;
  	height: 72px;
  }
 .menu-services:hover{
  	border-top: 5px solid #3E215A;
- 	background-color: darkgrey;
+ 	background-color: #d0ebfe;
  	padding: 20px 30px;
  	height: 72px;
  }
 .menu-association:hover{
  	border-top: 5px solid #3E215A;
- 	background-color: darkgrey;
+ 	background-color: #d0ebfe;
  	padding: 20px 30px;
  	height: 72px;
  }
  .menu-decouverte:hover{
  	border-top: 5px solid #3E215A;
- 	background-color: darkgrey;
+ 	background-color: #d0ebfe;
  	padding: 20px 30px;
  	height: 72px;
  }
-/*.connexion:hover{
-	border-top: 5px solid #3E215A;
- 	background-color: darkgrey;
- 	padding: 20px 30px;
- 	text-decoration: none;
- 	color: #3E215A;
- 	height: 72px;
-}*/
 .logo{
 	margin-top: 7px;
 	margin-right: 7px;
