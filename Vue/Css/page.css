@@ -1,6 +1,6 @@
 /*Style du Body et du titre*/
 body{
-	background-color: #d0ebfe;
+	background-color: lightblue;
 }
 h1{
 	text-align: center;
@@ -24,7 +24,7 @@ h1{
 nav{
 	width: 100%;
 	height: 73px;
-	background-color:#85bbff;
+	background-color:darkgrey;
 	
 } 
 
@@ -72,17 +72,15 @@ nav li:hover .submenu{
 }
 
 .submenu li{
-	padding-bottom: 1px;
+	border-bottom : 1px solid #CCC;
 }
 
 .submenu li a{
 	padding: 15px 30px;
-	font-size: 13px;
 	color: #632685;
 	border: 2px solid #632685;
 	border-radius: 5px;
 	width: 270px;
-	margin: 3px;
 	font-size: 17px;
 }
  .submenu li:hover a{
@@ -92,99 +90,99 @@ nav li:hover .submenu{
 
 /*Style des classe menu*/
 .menu-accueil a{
-	color: #632685;
+	color: #3E215A;
 	text-decoration: none;
 	font-size: 17px;
 }
 .menu-accueil{
 	text-decoration: none;
+	background-color: darkgrey;
+	border-top: 5px solid darkgrey;
+	border-bottom: 5px solid darkgrey;
+	border-right: 5px solid darkgrey;
 	border-radius: 30px;
-	border-top: 5px solid #632685;
-	border-bottom: 5px solid #632685;
-	border-right: 5px solid #632685;
- 	background-color: #85bbff;
 }
 .menu-actualite .submenu{
-	background-color: #85bbff;
+	background-color: darkgrey;
 }
 .menu-commune .submenu{
-	background-color: #85bbff;
+	background-color: darkgrey;
 }
 .menu-services .submenu{
-	background-color: #85bbff;
+	background-color: darkgrey;
 }
 .menu-association .submenu{
-	background-color: #85bbff;
+	background-color: darkgrey;
 }
 .menu-decouverte .submenu{
-	background-color: #85bbff;
+	background-color: darkgrey;
 }
 /*.connexion .submenu{
-	background-color: #85bbff;
+	background-color: darkgrey;
 }
 */
 /*Style des li dans les liste déroulante*/
 .menu-actualite .submenu li:hover{
-	background-color:#632685; 
+	background-color:#3E215A; 
 }
 .menu-commune .submenu li:hover{
-	background-color:#632685; 
+	background-color:#3E215A; 
 }
 .menu-services .submenu li:hover{
-	background-color:#632685; 
+	background-color:#3E215A; 
 }
 .menu-association .submenu li:hover{
-	background-color:#632685; 
+	background-color:#3E215A; 
 }
 .menu-decouverte .submenu li:hover{
-	background-color:#632685; 
+	background-color:#3E215A; 
 }
 /*.connexion .submenu li:hover{
-	background-color: #632685;
+	background-color: #3E215A;
 }*/
 
 .menu-actualite{
- 	border-top: 5px solid #85bbff;
- 	background-color: #85bbff;
- 	color: #632685;
+ 	border-top: 5px solid darkgrey;
+ 	background-color: darkgrey;
+ 	color: #3E215A;
  	padding: 20px 30px;
  	font-size: 19px;
  }
 
 .menu-commune{
- 	border-top: 5px solid #85bbff;
- 	background-color: #85bbff;
- 	color: #632685;
+ 	border-top: 5px solid darkgrey;
+ 	background-color: darkgrey;
+ 	color: #3E215A;
  	padding: 20px 30px;
  	font-size: 19px;
  }
 
 .menu-services{
- 	border-top: 5px solid #85bbff;
- 	background-color: #85bbff;
- 	color: #632685;
+ 	border-top: 5px solid darkgrey;
+ 	background-color: darkgrey;
+ 	color: #3E215A;
  	padding: 20px 30px;
  	font-size: 19px;
  }
 
 .menu-association{
- 	border-top: 5px solid #85bbff;
- 	background-color: #85bbff;
- 	color: #632685;
+ 	border-top: 5px solid darkgrey;
+ 	background-color: darkgrey;
+ 	color: #3E215A;
  	padding: 20px 30px;
  	font-size: 19px;
  }
 .menu-decouverte{
- 	border-top: 5px solid #85bbff;
- 	background-color: #85bbff;
- 	color: #632685;
+ 	border-top: 5px solid darkgrey;
+ 	background-color: darkgrey;
+ 	color: #3E215A;
  	padding: 20px 30px;
  	font-size: 19px;
  }
 /* .connexion{
- 	border-top: 5px solid #85bbff;
- 	background-color: #85bbff;
- 	color: #632685;
+ 	border-top: 5px solid darkgrey;
+ 	background-color: darkgrey;
+ 	color: #3E215A;
  	padding: 20px 30px
  }*/
 
@@ -192,49 +190,47 @@ nav li:hover .submenu{
 /*style des cases lors du passage de la souris*/
 .menu-accueil:hover{
 	text-decoration: none;
-	color : white;
-	border-radius: 30px;
-	border-top: 5px solid #632685;
-	border-bottom: 5px solid #632685;
-	border-right: 5px solid #632685;
- 	background-color: #d0ebfe;
+	border-top: 5px solid #3E215A;
+	border-bottom: 5px solid #3E215A;
+	border-right: 5px solid #3E215A;
+ 	background-color: darkgrey;
 }
 
 .menu-actualite:hover{
- 	border-top: 5px solid #632685;
- 	background-color: #d0ebfe;
+ 	border-top: 5px solid #3E215A;
+ 	background-color: darkgrey;
  }
 
 .menu-commune:hover{
- 	border-top: 5px solid #632685;
- 	background-color: #d0ebfe;
+ 	border-top: 5px solid #3E215A;
+ 	background-color: darkgrey;
  	padding: 20px 30px;
  	height: 72px;
  }
 .menu-services:hover{
- 	border-top: 5px solid #632685;
- 	background-color: #d0ebfe;
+ 	border-top: 5px solid #3E215A;
+ 	background-color: darkgrey;
  	padding: 20px 30px;
  	height: 72px;
  }
 .menu-association:hover{
- 	border-top: 5px solid #632685;
- 	background-color: #d0ebfe;
+ 	border-top: 5px solid #3E215A;
+ 	background-color: darkgrey;
  	padding: 20px 30px;
  	height: 72px;
  }
  .menu-decouverte:hover{
- 	border-top: 5px solid #632685;
- 	background-color: #d0ebfe;
+ 	border-top: 5px solid #3E215A;
+ 	background-color: darkgrey;
  	padding: 20px 30px;
  	height: 72px;
  }
 /*.connexion:hover{
-	border-top: 5px solid #632685;
- 	background-color: #d0ebfe;
+	border-top: 5px solid #3E215A;
+ 	background-color: darkgrey;
  	padding: 20px 30px;
  	text-decoration: none;
- 	color: #632685;
+ 	color: #3E215A;
  	height: 72px;
 }*/
 .logo{
