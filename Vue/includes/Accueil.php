@@ -1,7 +1,7 @@
 <section>
 	<h2 class="soustitre">Bienvenue sur le site de Freycenet la tour</h2>
-	<div align="center">
-		<img src="Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f1416234.jpg" width="1280" height="720" alt="First slide">
+	<div  class="imgAccueil" align="center">
+		<img src="Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f1416234.jpg" width="95%" height="95%">
 	</div>
 	<div class="container">
 		<div align="center">
