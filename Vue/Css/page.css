@@ -215,18 +215,6 @@ table th{
 	text-align: center;
 }
 
-
-
-/*.connexion{
-	border-top: 5px;
- 	background-color: #858585;
- 	color: #3E215A;
-	text-align: right;
-}
-.connexion:hover {
-	border-top: 5px solid #3E215A;
- 	background-color: darkgrey;
-}*/
 /*Style Tableau*/
 .tableau{
 	margin-right: auto;
@@ -242,6 +230,19 @@ table th{
 	padding: 5px 5px;
 	border-top: 3px solid #3E215A;
 	border-bottom: 3px solid #3E215A;
+}
+
+.cadre {
+  padding: 20px;
+  margin: 10px auto;
+  text-align: center;
+  /* border-related properties */
+  border: 20px solid black;
+  background-clip: padding-box;
+  border-image-source: url(../img/lauraPhotoshop/bordureF4.png);
+  border-image-slice: 40;
+  border-image-repeat: round;
+  font-family: 'Expletus Sans', cursive; 
 }
 
 .soustitre2{
@@ -310,4 +311,15 @@ footer{
 }
 .imgAccueil{
 	margin-bottom: 10px; 
+	display: flex;
+	justify-content: space-around;
+}
+
+.imgAccueil2{
+	display: flex;
+	flex-direction: column;
+}
+
+.imgA3{
+	margin: 10px;
 }

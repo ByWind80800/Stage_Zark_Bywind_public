@@ -1,3 +1,3 @@
 <section>
-	<h2 class="soustitre">Le Comité des fêtes</h2>
+	<h2 class="cadre">Le Comité des fêtes</h2>
 </section>
