@@ -56,7 +56,7 @@
 	</div>
 	<div class="container">
 		<div align="center">
-			<h4 class="soustitre2">Données sur Freycenet la tour</h4>
+			<h4 class="cadre">Données sur Freycenet la tour</h4>
 			<div class="row">
 				<div class="col-md-12" align="center">
 					<div class="fondtext">
@@ -71,7 +71,7 @@
 	</div>
 	<div class="container">
 		<div align="center">
-			<h4 class="soustitre2">Les communes les plus proches de Freycenet-la-Tour</h4>
+			<h4 class="cadre">Les communes les plus proches de Freycenet-la-Tour</h4>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="fondtext">
