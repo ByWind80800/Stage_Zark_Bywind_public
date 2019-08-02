@@ -1,20 +1,47 @@
 <script>
 		window.onload= defilImg
-		current_img = 0;
-		arrImg = ['Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f0440554.jpg','Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f1406762.jpg','Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f0438122.jpg']
-		 
+
+		//1 little picture
 		current_img2 = 0;
-		arrImg2 = ['Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f0434666.jpg','Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f0437290.jpg','Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f1415146.jpg']
+		arrImg2 = ['Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f1415146.jpg',
+					 'Vue/img/Chevreuil.jpg',
+					 'Vue/img/photos_paysage/les_Barthes/f0277034.jpg',
+					 'Vue/img/agricole.jpg',
+					 'Vue/img/freycenet2.jpg']
 
-		current_img3 = 0;
-		arrImg3 = ['Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f0439274.jpg','Vue/img/photos_paysage/les_Barthes/f3421674.jpg','Vue/img/photos_paysage/les_Barthes/f0362730.jpg']
-
-		current_imgA = 0;
-		arrImgA = ['Vue/img/Chevreuil.jpg','Vue/img/fichier_du_20190611075017.jpg','Vue/img/photos_paysage/les_Barthes/f0277034.jpg']
-
+		//2 little picture
 		current_img2A = 0;
-		arrImg2A = ['Vue/img/ch.jpg','Vue/img/Petanque.jpg','Vue/img/mairie.jpg']
-		
+		arrImg2A = [ 'Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f0437290.jpg',
+						'Vue/img/renard.jpg',
+						'Vue/img/photos_paysage/les_Barthes/f3421674.jpg',
+						'Vue/img/ch.jpg',
+						'Vue/img/eglise.jpg']
+
+		//3 little picture
+		current_img = 0;
+		arrImg = ['Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f0434666.jpg',
+					'Vue/img/lievre.jpeg',
+					'Vue/img/photos_paysage/les_Barthes/etang2.jpg',
+					'Vue/img/Petanque.jpg',
+					'Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f0440554.jpg']
+
+		//4 little picture
+		current_imgA = 0;
+		arrImgA = ['Vue/img/fichier_du_20190611075017.jpg',
+					'Vue/img/vaches.jpg',
+					'Vue/img/photos_paysage/les_Barthes/etang.jpg',
+					'Vue/img/eolienne.jpeg',
+					'Vue/img/freycenet1.jpg']
+
+		//Big picture
+		current_img3 = 0;
+		arrImg3 = ['Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f0439274.jpg',
+					'Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f1406762.jpg',
+					'Vue/img/photos_paysage/les_Barthes/f0362730.jpg',
+					'Vue/img/mairie.jpg',
+					'Vue/img/photos_paysage/photos_paysage_freycenet_la_tour/f0438122.jpg']	
+
+
 		function defilImg(){
 		  if(current_img == arrImg.length)
 		  current_img = 0;
@@ -43,15 +70,13 @@
 	<h2 class="cadre">Bienvenue sur le site de Freycenet la tour</h2>
 	<div  class="imgAccueil">
 		<div  class="imgAccueil2">		 
-			<img class="imgA3" id='toto' src='blank.jpg' width="400" height="250"/>
-			<img class="imgA3" id='tuto' src='blank.jpg' width="400" height="250"/>
-		</div>
-		<div  class="imgAccueil2">		 
-			<img id='tutu' src='blank.jpg' width="770" height="530"/>
+			<img class="imgA3" id='tutu' src='blank.jpg' width="770" height="530"/>
 		</div>
 		<div  class="imgAccueil2">		 
 			<img class="imgA3" id='tata' src='blank.jpg' width="400" height="250"/>
-			<img class="imgA3" id='tuta' src='blank.jpg' width="400" height="250"/>
+			<img class="imgA3" id='tuta' src='blank.jpg' width="400" height="250"/> 
+			<img class="imgA3" id='toto' src='blank.jpg' width="400" height="250"/>
+			<img class="imgA3" id='tuto' src='blank.jpg' width="400" height="250"/>
 		</div>
 	</div>
 	<div class="container">
