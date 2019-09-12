@@ -3,16 +3,9 @@
 	<h2 class="soustitre">Tableau des journaux "Le P'tit Journal"</h2>
 	<table class="table">
 		<tr>
-			<?php
-			if(isset($_SESSION['droit']))
-			{
-				?>
-				<th>Id Journal</th>
-				<?php
-			}
-			?>
 			<th>Lien Journal</th>
 			<?php
+			//Si on est admin
 			if(isset($_SESSION['droit']))
 			{
 				?>
@@ -26,13 +19,11 @@
 		foreach ($lesJournaux as $unJournal) 
 		{
 			echo "<tr>";
+			echo "<td align='center'><a href='Vue/includes/Commune/LePtitjournal/".$unJournal['cheminJournal']."' target='new'>Le P'tit Journal de ".$cpt."</a></td>";
+			//Si on est admin
 			if(isset($_SESSION['droit']))
 			{
-				echo "<td align='center'>".$unJournal['IdJournal']."</td>";
-			}
-			echo "<td align='center'><a href='/../Vue/LePtitjournal/".$unJournal['cheminJournal']."'>Le P'tit Journal de ".$cpt."</a></td>";
-			if(isset($_SESSION['droit']))
-			{
+				//on peut supprimer
 				?>
 				<td><a href="index.php?page=Controler&param=SupprJournal&IdJournal=<?php echo $unJournal['IdJournal']?>"><i class='fas fa-trash-alt'></i></a></td>
 				<?php
@@ -44,8 +35,10 @@
 		?>
 		<tr>
 			<?php
+			//Si on est admin
 			if(isset($_SESSION['droit']))
 			{
+				//On peut ajouter
 				?>
 				<td align='center'><a href="index.php?page=Controler&param=ajoutjournal"><i class='fas fa-plus'></i></a></td>
 				<td></td>

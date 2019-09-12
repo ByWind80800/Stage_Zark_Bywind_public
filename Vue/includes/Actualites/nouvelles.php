@@ -1,18 +1,11 @@
 <section>
 	<table class="table">
 		<tr>
-			<?php
-			if(isset($_SESSION['droit']))
-			{
-				?>
-				<th></th>
-				<?php
-			}
-			?>
 			<th>Titre</th>
 			<th>Texte</th>
 			<th>Date</th>
 			<?php
+				//Si on est admin
 				if(isset($_SESSION['droit']))
 				{
 					?>
@@ -25,6 +18,7 @@
 		</tr>
 		<tr>
 		<?php
+			//Si on est admin
 			if(isset($_SESSION['droit']))
 			{
 				?>
@@ -48,14 +42,10 @@
 				foreach ($lesActus as $uneActu) 
 				{
 					echo "<tr>";
-					if(isset($_SESSION['droit']))
-					{
-						echo "<td>".$uneActu['IDACTU']."</td>";
-					}
-
 					echo "<td>".$uneActu['TITREACTU']."</td>";
 					echo "<td>".$uneActu['TEXTEACTU']."</td>";
 					echo "<td>".$uneActu['DATEACTU']."</td>";
+					//Si on est admin
 					if(isset($_SESSION['droit']))
 					{
 						?>
@@ -75,7 +65,6 @@
 					
 				}
 			?>
-		</tr>
-		
+		</tr>	
 	</table>
 </section>

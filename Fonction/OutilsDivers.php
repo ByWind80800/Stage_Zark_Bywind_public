@@ -141,7 +141,7 @@ function TranfertPdf()
     {
         // Copie dans le repertoire du script avec un prenom_nom
         // incluant l'heure a la seconde pres
-        $repertoireDestination = dirname(__FILE__)."/../Vue/petitJournal/";
+        $repertoireDestination = dirname(__FILE__)."/../Vue/includes/Commune/LePtitjournal/";
 
         $prenom_nomDestination = "fichier_du_".date("YmdHis").".".$extensionFichier;
 

@@ -11,6 +11,7 @@
 					?>
 					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
 					<?php
+					//Si on est admin
 					if(isset($_SESSION['droit']))
 					{
 					    ?>
@@ -18,6 +19,7 @@
 					<?php
 					}
 					?>
+					<!-- Agrandissement des photos -->
 			            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Agrandissement"
 			               data-image="Vue/img/<?php echo $uneImage['CHEMINIMG']?>?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 			               data-target="#image-gallery">
@@ -32,6 +34,7 @@
 			</div>
 			<div>
 			<?php
+				//Si on est en admin
 				if(isset($_SESSION['droit']))
 				{
 					?>
