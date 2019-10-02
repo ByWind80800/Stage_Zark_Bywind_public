@@ -293,11 +293,43 @@ table th{
 	margin-bottom: 10px;
 
 }
+
+.fondtext3{
+	background-color: #8a8686;
+	border-radius: 10px;
+	margin-top: 40px;
+	margin-bottom: 40px;	
+}
+
+.tableL {
+	border-bottom: solid #3E215A;	
+	color: black;
+	font-size: 20px;
+	font-family: 'Signika';
+}
+
+.tableL2 {
+	font-size: 17px;
+}
+
 .colorPre{
 	color: black;
 	font-size: 20px;
-	font-family: 'Acme';
+	font-family: 'Signika';
 }
+
+.frame {
+	border : 5px solid #3E215A;
+	border-radius: 5px;
+}
+
+.format {
+	width: 65%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
 /*FIN STYLE DES BLOC DE TEXTE*/
 
 /*STYLE DU PIED DE PAGE*/

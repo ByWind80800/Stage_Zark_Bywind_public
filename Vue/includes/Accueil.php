@@ -79,25 +79,29 @@
 			<img class="imgA3" id='tuto' src='blank.jpg' width="400" height="250"/>
 		</div>
 	</div>
-	<div class="container">
-		<div align="center">
-			<h4 class="cadre">Données sur Freycenet la tour</h4>
-			<div class="row">
-				<div class="col-md-12" align="center">
-					<div class="fondtext">
-						<p class="colorPre">Nombre d'habitants : 99</p>
-						<p class="colorPre">Superficie : 7.93 Km² </p>
-						<p class="colorPre">Altitude : entre 964m et 1244m</p>
-						<p class="colorPre">Coordonnées géographiques : 44.09389, 4.05972</p>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div class="container" align="center">
+		<h4 class="cadre">Données sur Freycenet la tour</h4>
 	</div>
-	<div class="container">
-		<div align="center">
-			<h4 class="cadre">Les communes les plus proches de Freycenet-la-Tour</h4>
-				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1jmbypxSLZdbRCKv_uHmeXiCz-I2yvuEj" width="640" height="480"></iframe>
-		</div>
+	<div class="format">
+		<table class="table table-striped fondtext3">
+			<tr class="tableL">
+  				<th>Habitants</th>
+  				<th>Superficie</th>
+  				<th>Altitude</th>
+  				<th>Coordonnées géographiques</th>
+			</tr>
+			<tr class="tableL2">
+  				<td align="center"><b>99</b></td>
+		      	<td align="center"><b>7.93km²</b></td>
+		      	<td align="center"><b>Entre 964m et 1244m</b></td>
+		      	<td align="center"><b>44.09389, 4.05972</b></td>
+			</tr>
+		</table>
+	</div>
+	<div class="container" align="center">
+		<h4 class="cadre">Les communes les plus proches de Freycenet-la-Tour</h4>
+	</div>
+	<div class="format">
+		<iframe class="frame" src="https://www.google.com/maps/d/u/0/embed?mid=1jmbypxSLZdbRCKv_uHmeXiCz-I2yvuEj" width=100% height="500"></iframe>
 	</div>
 </section>
