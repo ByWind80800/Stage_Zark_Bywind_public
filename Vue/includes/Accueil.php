@@ -97,26 +97,7 @@
 	<div class="container">
 		<div align="center">
 			<h4 class="cadre">Les communes les plus proches de Freycenet-la-Tour</h4>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="fondtext">
-						<p class="colorPre">Alleyrac</p>					
-						<p class="colorPre">Lantriac</p>
-						<p class="colorPre">Le Monastier sur Gazeille</p>
-						<p class="colorPre">Montusclat</p>
-						<p class="colorPre">Présailles</p>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="fondtext">
-						<p class="colorPre">Freycenet la Cuche</p>
-						<p class="colorPre">Laussonne</p>
-						<p class="colorPre">Les Estables</p>
-						<p class="colorPre">Moudeyres</p>
-						<p class="colorPre">Saint-Front</p>
-					</div>
-				</div>
-			</div>
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1jmbypxSLZdbRCKv_uHmeXiCz-I2yvuEj" width="640" height="480"></iframe>
 		</div>
 	</div>
 </section>
