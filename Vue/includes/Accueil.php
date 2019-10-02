@@ -100,11 +100,11 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="fondtext">
-						<p class="colorPre"><font size="4">Alleyrac</font></p>					
-						<p class="colorPre"><font size="4">Lantriac</font></p>
-						<p class="colorPre"><font size="4">Le Monastier sur Gazeille</font></p>
-						<p class="colorPre"><font size="4">Montusclat</font></p>
-						<p class="colorPre"><font size="4">Présailles</font></p>
+						<p class="colorPre">Alleyrac</p>					
+						<p class="colorPre">Lantriac</p>
+						<p class="colorPre">Le Monastier sur Gazeille</p>
+						<p class="colorPre">Montusclat</p>
+						<p class="colorPre">Présailles</p>
 					</div>
 				</div>
 				<div class="col-md-6">

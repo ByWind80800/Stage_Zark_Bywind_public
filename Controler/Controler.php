@@ -120,6 +120,7 @@ if(isset($_REQUEST['param']))
 
 		case 'Petanque':
 		{
+            $EventPetanque=$Pdo->getListEventPetanque();
 			include(dirname(__FILE__).'/../Vue/includes/Association/Petanque.php');
 			break;
 		}
@@ -195,6 +196,12 @@ if(isset($_REQUEST['param']))
         case 'ajoutjournal':
         {
             include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutJournal.php');
+            break;
+        }
+
+        case 'AjoutPetanque' : 
+        {
+            include (dirname(__FILE__).'/../Vue/includes/Admin/AjoutPetanque.php');
             break;
         }
 

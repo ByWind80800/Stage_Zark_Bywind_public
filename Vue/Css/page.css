@@ -120,6 +120,9 @@ nav li:hover .submenu{
 .menu-decouverte .submenu li:hover{
 	background-color:#3E215A; 
 }
+.menu-connexion .submenu li:hover{
+	background-color:#3E215A; 
+}
 .menu-actualite{
  	border-top: 5px solid #85bbff;
  	background-color: #85bbff;
@@ -158,12 +161,13 @@ nav li:hover .submenu{
  	padding: 20px 30px;
  	font-size: 19px;
  }
-/* .connexion{
- 	border-top: 5px solid darkgrey;
- 	background-color: darkgrey;
+.menu-connexion{
+ 	border-top: 5px solid #85bbff;
+ 	background-color: #85bbff;
  	color: #3E215A;
- 	padding: 20px 30px
- }*/
+ 	padding: 20px 30px;
+ 	font-size: 19px;
+ }
 
 
 /*style des cases lors du passage de la souris*/
@@ -203,6 +207,12 @@ nav li:hover .submenu{
  	background-color: #d0ebfe;
  	padding: 20px 30px;
  	height: 72px;
+ }
+ .menu-connexion:hover{
+ 	text-decoration: none;
+	background-color: #85bbff;
+	border-top: 5px solid #3E215A;
+	padding : 20px 30px;
  }
 .logo{
 	margin-top: 7px;
@@ -270,10 +280,10 @@ table th{
 
 /*STYLE DES BLOC DE TEXTE*/
 .fondtext{
-	background-color: #4A4A4A;
+	background-color: #8a8686;
 	border : solid #3E215A;
 	margin-bottom: 10px;
-
+	border-radius: 10px;
 }
 
 .fondtext2{
@@ -284,7 +294,9 @@ table th{
 
 }
 .colorPre{
-	color: white;
+	color: black;
+	font-size: 20px;
+	font-family: 'Acme';
 }
 /*FIN STYLE DES BLOC DE TEXTE*/
 

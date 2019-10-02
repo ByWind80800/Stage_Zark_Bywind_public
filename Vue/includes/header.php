@@ -10,6 +10,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Expletus+Sans:700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Acme&display=swap"; rel="stylesheet">
 		<!-- Fin Font du site -->
 
 		<link rel="stylesheet" type="text/css" href="Vue/Css/dist/css/bootstrap.min.css">

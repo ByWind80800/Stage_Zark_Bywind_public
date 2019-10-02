@@ -103,6 +103,14 @@
 			return $lesEvents;
 		}
 
+		public function getListEventPetanque()
+		{
+			$req = "SELECT descriptif
+						FROM evenement
+						INNER join TYPE_EVENEMENT on TYPE_EVENEMENT.idTypeEvent = evenement.idTypeEvent
+						WHERE evenement.idTypeEvent = 1";
+		}
+
 		public function getListPtitJournal()
 		{
 			$req = "SELECT * FROM petitjournal";

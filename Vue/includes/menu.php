@@ -52,20 +52,22 @@
 					<!-- <li><a href="index.php?page=Controler&param=Parcours">Parcours de Freycenet</a></li> -->
 				</ul>
 			</li>
-			<!-- <li class="menu-connexion">
+			<li class="menu-connexion">
+				<ul class="submenu">
 				<?php
             if(isset($_SESSION['droit']))
             {
                 ?><a href="index.php?page=Controler&param=Deconnexion">Déconnexion</a> <?php
             }
-			else
+			/*else
 			{
 				?>
 				<a href="index.php?page=Controler&param=Connexion">Connexion</a>
 				<?php
 			}
-			?>
-			</li> -->	
+			*/?>
+				</ul>
+			</li>	
 			<img src="Vue/img/logo.png" align="right" class="logo">					
 		</ul>
 	</nav>
