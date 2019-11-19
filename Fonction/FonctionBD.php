@@ -105,7 +105,7 @@
 
 		public function getListEventPetanque()
 		{
-			$req = "SELECT descriptif
+			$req = "SELECT *
 						FROM evenement
 						INNER join TYPE_EVENEMENT on TYPE_EVENEMENT.idTypeEvent = evenement.idTypeEvent
 						WHERE evenement.idTypeEvent = 1";

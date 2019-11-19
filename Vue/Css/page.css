@@ -54,7 +54,6 @@ nav a{
 
 nav > ul > li > a{
 	padding: 20px 30px;
-	color: #FFF;
 }
 
 nav li:hover .submenu{
@@ -120,9 +119,6 @@ nav li:hover .submenu{
 .menu-decouverte .submenu li:hover{
 	background-color:#3E215A; 
 }
-.menu-connexion .submenu li:hover{
-	background-color:#3E215A; 
-}
 .menu-actualite{
  	border-top: 5px solid #85bbff;
  	background-color: #85bbff;
@@ -162,11 +158,15 @@ nav li:hover .submenu{
  	font-size: 19px;
  }
 .menu-connexion{
- 	border-top: 5px solid #85bbff;
- 	background-color: #85bbff;
- 	color: #3E215A;
- 	padding: 20px 30px;
+	background-color: #85bbff;
+	border-top: 5px solid #85bbff;
  	font-size: 19px;
+ 	text-decoration: none;
+ }
+
+ .a-connex{
+ 	text-decoration : none;
+ 	color : #3E215A;
  }
 
 
@@ -209,10 +209,12 @@ nav li:hover .submenu{
  	height: 72px;
  }
  .menu-connexion:hover{
- 	text-decoration: none;
-	background-color: #85bbff;
+	background-color: #d0ebfe;
 	border-top: 5px solid #3E215A;
-	padding : 20px 30px;
+ }
+ .a-connex:hover{
+ 	text-decoration : none;
+ 	color : #3E215A;
  }
 .logo{
 	margin-top: 7px;

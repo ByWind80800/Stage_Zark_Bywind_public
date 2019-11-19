@@ -53,20 +53,18 @@
 				</ul>
 			</li>
 			<li class="menu-connexion">
-				<ul class="submenu">
 				<?php
-            if(isset($_SESSION['droit']))
-            {
-                ?><a href="index.php?page=Controler&param=Deconnexion">Déconnexion</a> <?php
-            }
-			/*else
-			{
+            	if(isset($_SESSION['droit']))
+            	{
+                	?><a class="a-connex" href="index.php?page=Controler&param=Deconnexion">Déconnexion</a> <?php
+            	}
+				else
+				{
+					?>
+					<a class="a-connex" href="index.php?page=Controler&param=Connexion">Connexion</a>
+					<?php
+				}
 				?>
-				<a href="index.php?page=Controler&param=Connexion">Connexion</a>
-				<?php
-			}
-			*/?>
-				</ul>
 			</li>	
 			<img src="Vue/img/logo.png" align="right" class="logo">					
 		</ul>

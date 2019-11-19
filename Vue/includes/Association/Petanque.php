@@ -16,7 +16,7 @@
 					<?php 
 						foreach ($EventPetanque as $unEventP) 
 						{
-							echo $unEventP['DESCRIPTIF'];
+							
 						}
 					?>
 				</div>
