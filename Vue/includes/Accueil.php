@@ -70,7 +70,7 @@
 	<h2 class="cadre">Bienvenue sur le site de Freycenet la tour</h2>
 	<div  class="imgAccueil">
 		<div  class="imgAccueil2">		 
-			<img class="imgA3" id='tutu' src='blank.jpg' width="770" height="530"/>
+			<img class="imgA3" id='tutu' src='blank.jpg' width="550" height="310"/>
 		</div>
 		<div  class="imgAccueil2">		 
 			<img class="imgA3" id='tata' src='blank.jpg' width="400" height="250"/>
