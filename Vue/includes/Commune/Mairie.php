@@ -1,5 +1,6 @@
 <section>
 	<div class="container">
+		<h2 class="cadre">Mairie</h2>
 		<div align="center">
 			<div class="row">
 				<div class="col-md-6">

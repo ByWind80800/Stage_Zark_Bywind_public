@@ -1,4 +1,6 @@
 <section>
+	<div class="container">
+		<h2 class="cadre">Nouvelles</h2>
 	<table class="table">
 		<tr>
 			<th>Titre</th>
@@ -66,5 +68,6 @@
 				}
 			?>
 		</tr>	
-	</table>
+	</table>	
+</div>
 </section>

@@ -1,6 +1,6 @@
 <section>
-	<p align="center">Dans chacun des Pdf si dessous vous pourrez apercevoir le calendrier de l'année suivante suivi du contenu du "P'tit Journal" de l'année demandé.</p>
-	<h2 class="soustitre">Tableau des journaux "Le P'tit Journal"</h2>
+	<p align="center" class="ecriture">Dans chacun des Pdf si dessous vous pourrez apercevoir le calendrier de l'année suivante suivi du contenu du "P'tit Journal" de l'année demandé.</p>
+	<h2 class="cadre">Tableau des journaux "Le P'tit Journal"</h2>
 	<table class="table">
 		<tr>
 			<th>Lien Journal</th>

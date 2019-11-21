@@ -3,7 +3,7 @@
 <section>
 	<div class="colorfont">
     <div class="container" style="padding: 10px;">
-        <h2>Rétrophotos</h2>
+        <h2 class="cadre">Rétrophotos</h2>
         <div class="row">
 				<?php
 				foreach ($lesLignesImage as $uneImage)

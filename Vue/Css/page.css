@@ -320,6 +320,19 @@ table th{
 	font-family: 'Signika';
 }
 
+.coloration {
+	font-size: 20px;
+	font-family: 'Signika';
+	border-radius: 10px;
+	margin-top: 25%;
+	border : solid #3E215A;
+	margin-bottom: 10px;
+}
+
+.ecriture {
+	font-family: 'Signika';
+}
+
 .frame {
 	border : 5px solid #3E215A;
 	border-radius: 5px;

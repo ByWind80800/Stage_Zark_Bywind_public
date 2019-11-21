@@ -67,7 +67,9 @@
 </script>
 
 <section>
-	<h2 class="cadre">Bienvenue sur le site de Freycenet la tour</h2>
+	<div class="container">
+		<h2 class="cadre">Bienvenue sur le site de Freycenet la tour</h2>
+	</div>
 	<div  class="imgAccueil">
 		<div  class="imgAccueil2">		 
 			<img class="imgA3" id='tutu' src='blank.jpg' width="550" height="310"/>

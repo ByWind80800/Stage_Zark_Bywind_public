@@ -1,4 +1,6 @@
 <section>
+	<div class="container">
+		<h2 class="cadre">Conseil Municipal</h2>
 	<table border="2" class="table">
 		<tr>
 			<th>Nom</th>
@@ -50,4 +52,5 @@
 		?>
 		</tr>
 	</table>
+	</div>
 </section>
