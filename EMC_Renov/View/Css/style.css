@@ -1,0 +1,28 @@
+body{
+	background-image: url('../Img/duotone.png');
+	background-attachment: fixed;
+}
+
+p, h1, h3{
+	color: white;
+}
+
+.text{
+	padding: 20px;
+	margin: 60px;
+	background-color: rgba(0,0,0,0.6);
+	box-shadow: 10px 6px 5px rgba(0,0,0,0.7);
+}
+
+.text2{
+	padding: 60px;
+	margin: 10px;
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 2px 5px 5px rgba(0,0,0,0.2);
+}
+
+.resp {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
