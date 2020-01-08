@@ -95,8 +95,7 @@
 
 	    public function getListEvent()
 		{
-			$req = "SELECT *
-					FROM evenement";
+			$req = "SELECT * FROM evenement";
 			// echo $req;
 			$res = Pdofreycenet::$monPdo->query($req);
 			$lesEvents = $res->fetchAll();
@@ -105,10 +104,9 @@
 
 		public function getListEventPetanque()
 		{
-			$req = "SELECT *
-						FROM evenement
-						INNER join TYPE_EVENEMENT on TYPE_EVENEMENT.idTypeEvent = evenement.idTypeEvent
-						WHERE evenement.idTypeEvent = 1";
+			$req = "SELECT * FROM evenement 
+INNER join TYPE_EVENEMENT on TYPE_EVENEMENT.idTypeEvent = evenement.idTypeEvent
+WHERE evenement.idTypeEvent = 1";
 		}
 
 		public function getListPtitJournal()
